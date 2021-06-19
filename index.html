@@ -82,11 +82,56 @@
     />
     <meta name="theme-color" content="#ffffff" />
     <title>JSamuel | Desarrollador Frontend</title>
+    <!-- Material icons -->
+    <link
+      href="https://fonts.googleapis.com/icon?family=Material+Icons"
+      rel="stylesheet"
+    />
     <!-- Materialize -->
     <link rel="stylesheet" href="css/materialize.min.css" />
+    <!-- My styles -->
+    <link rel="stylesheet" href="css/my-styles.min.css" />
   </head>
   <body>
+    <div class="navbar-fixed">
+      <nav class="white">
+        <div class="container nav-wrapper">
+          <a href="#" class="brand-logo">
+            <img
+              src="images/brand-logos/logo-horizontal.svg"
+              alt="Logo de JSamuel"
+            />
+          </a>
+          <a href="#" class="sidenav-trigger right" data-target="mobile-nav">
+            <i class="material-icons">menu</i>
+          </a>
+          <ul class="right hide-on-med-and-down">
+            <li>
+              <a href="#about" class="waves-effect waves-js">Sobre mi</a>
+            </li>
+            <li>
+              <a href="#skills" class="waves-effect waves-js">Tecnologías</a>
+            </li>
+            <li>
+              <a href="#proyects" class="waves-effect waves-js">Proyectos</a>
+            </li>
+            <li>
+              <a href="#contact" class="waves-effect waves-js">Contacto</a>
+            </li>
+          </ul>
+        </div>
+      </nav>
+    </div>
+    <ul class="sidenav" id="mobile-nav">
+      <li><a href="#about" class="waves-effect waves-js">Sobre mi</a></li>
+      <li><a href="#skills" class="waves-effect waves-js">Tecnologías</a></li>
+      <li><a href="#proyects" class="waves-effect waves-js">Proyectos</a></li>
+      <li><a href="#contact" class="waves-effect waves-js">Contacto</a></li>
+    </ul>
     <!-- Materialize -->
     <script src="js/bin/materialize.min.js"></script>
+    <script>
+      M.AutoInit();
+    </script>
   </body>
 </html>
