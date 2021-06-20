@@ -93,47 +93,51 @@
     <link rel="stylesheet" href="css/my-styles.min.css" />
   </head>
   <body>
-    <div class="navbar-fixed">
-      <nav class="white">
-        <div class="container nav-wrapper">
-          <a href="#" class="brand-logo">
-            <picture>
-              <source
-                media="(max-width: 500px)"
-                srcset="images/brand-logos/logo.svg"
-              />
-              <img
-                src="images/brand-logos/logo-horizontal.svg"
-                alt="Logo de JSamuel"
-              />
-            </picture>
-          </a>
-          <a href="#" class="sidenav-trigger right" data-target="mobile-nav">
-            <i class="material-icons">menu</i>
-          </a>
-          <ul class="right hide-on-med-and-down">
-            <li>
-              <a href="#about" class="waves-effect waves-js">Sobre mi</a>
-            </li>
-            <li>
-              <a href="#skills" class="waves-effect waves-js">Tecnologías</a>
-            </li>
-            <li>
-              <a href="#proyects" class="waves-effect waves-js">Proyectos</a>
-            </li>
-            <li>
-              <a href="#contact" class="waves-effect waves-js">Contacto</a>
-            </li>
-          </ul>
-        </div>
-      </nav>
-    </div>
-    <ul class="sidenav" id="mobile-nav">
-      <li><a href="#about" class="waves-effect waves-js">Sobre mi</a></li>
-      <li><a href="#skills" class="waves-effect waves-js">Tecnologías</a></li>
-      <li><a href="#proyects" class="waves-effect waves-js">Proyectos</a></li>
-      <li><a href="#contact" class="waves-effect waves-js">Contacto</a></li>
-    </ul>
+    <header class="header">
+      <!-- Navbar -->
+      <div class="navbar-fixed">
+        <nav class="white">
+          <div class="container nav-wrapper">
+            <a href="#" class="brand-logo">
+              <picture>
+                <source
+                  media="(max-width: 500px)"
+                  srcset="images/brand-logos/logo.svg"
+                />
+                <img
+                  src="images/brand-logos/logo-horizontal.svg"
+                  alt="Logo de JSamuel"
+                />
+              </picture>
+            </a>
+            <a href="#" class="sidenav-trigger right" data-target="mobile-nav">
+              <i class="material-icons">menu</i>
+            </a>
+            <ul class="right hide-on-med-and-down">
+              <li>
+                <a href="#about" class="waves-effect waves-js">Sobre mi</a>
+              </li>
+              <li>
+                <a href="#skills" class="waves-effect waves-js">Tecnologías</a>
+              </li>
+              <li>
+                <a href="#proyects" class="waves-effect waves-js">Proyectos</a>
+              </li>
+              <li>
+                <a href="#contact" class="waves-effect waves-js">Contacto</a>
+              </li>
+            </ul>
+          </div>
+        </nav>
+      </div>
+      <ul class="sidenav" id="mobile-nav">
+        <li><a href="#about" class="waves-effect waves-js">Sobre mi</a></li>
+        <li><a href="#skills" class="waves-effect waves-js">Tecnologías</a></li>
+        <li><a href="#proyects" class="waves-effect waves-js">Proyectos</a></li>
+        <li><a href="#contact" class="waves-effect waves-js">Contacto</a></li>
+      </ul>
+      <!-- Hero -->
+    </header>
     <!-- Materialize -->
     <script src="js/bin/materialize.min.js"></script>
     <script>
