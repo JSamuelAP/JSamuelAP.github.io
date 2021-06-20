@@ -97,10 +97,16 @@
       <nav class="white">
         <div class="container nav-wrapper">
           <a href="#" class="brand-logo">
-            <img
-              src="images/brand-logos/logo-horizontal.svg"
-              alt="Logo de JSamuel"
-            />
+            <picture>
+              <source
+                media="(max-width: 500px)"
+                srcset="images/brand-logos/logo.svg"
+              />
+              <img
+                src="images/brand-logos/logo-horizontal.svg"
+                alt="Logo de JSamuel"
+              />
+            </picture>
           </a>
           <a href="#" class="sidenav-trigger right" data-target="mobile-nav">
             <i class="material-icons">menu</i>
