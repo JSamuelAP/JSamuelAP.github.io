@@ -93,71 +93,86 @@
     <link rel="stylesheet" href="css/my-styles.min.css" />
   </head>
   <body>
-    <div class="navbar-fixed">
-      <nav class="white">
-        <div class="container nav-wrapper">
-          <a href="#" class="brand-logo">
-            <picture>
-              <source
-                media="(max-width: 500px)"
-                srcset="images/brand-logos/logo.svg"
-              />
-              <img
-                src="images/brand-logos/logo-horizontal.svg"
-                alt="Logo de JSamuel"
-              />
-            </picture>
+    <header class="header" id="header">
+      <!-- Navbar -->
+      <div class="navbar-fixed">
+        <nav class="white">
+          <div class="container nav-wrapper">
+            <a href="#" class="brand-logo">
+              <picture>
+                <source
+                  media="(max-width: 500px)"
+                  srcset="images/brand-logos/logo.svg"
+                />
+                <img
+                  src="images/brand-logos/logo-horizontal.svg"
+                  alt="Logo de JSamuel"
+                />
+              </picture>
+            </a>
+            <a href="#" class="sidenav-trigger right" data-target="mobile-nav">
+              <i class="material-icons">menu</i>
+            </a>
+            <ul class="right hide-on-med-and-down">
+              <li>
+                <a href="#about" class="waves-effect waves-js">Sobre mí</a>
+              </li>
+              <li>
+                <a href="#skills" class="waves-effect waves-js">Tecnologías</a>
+              </li>
+              <li>
+                <a href="#proyects" class="waves-effect waves-js">Proyectos</a>
+              </li>
+              <li>
+                <a href="#contact" class="waves-effect waves-js">Contacto</a>
+              </li>
+            </ul>
+          </div>
+        </nav>
+      </div>
+      <!-- Side navbar -->
+      <ul class="sidenav" id="mobile-nav">
+        <li>
+          <a href="#about" class="waves-effect waves-js">
+            <i class="material-icons primary-js-text text-darken-2">person</i>
+            Sobre mí
           </a>
-          <a href="#" class="sidenav-trigger right" data-target="mobile-nav">
-            <i class="material-icons">menu</i>
+        </li>
+        <li>
+          <a href="#skills" class="waves-effect waves-js">
+            <i class="material-icons primary-js-text text-darken-2">code</i>
+            Tecnologías
           </a>
-          <ul class="right hide-on-med-and-down">
-            <li>
-              <a href="#about" class="waves-effect waves-js">Sobre mí</a>
-            </li>
-            <li>
-              <a href="#skills" class="waves-effect waves-js">Tecnologías</a>
-            </li>
-            <li>
-              <a href="#proyects" class="waves-effect waves-js">Proyectos</a>
-            </li>
-            <li>
-              <a href="#contact" class="waves-effect waves-js">Contacto</a>
-            </li>
-          </ul>
-        </div>
-      </nav>
-    </div>
-    <ul class="sidenav" id="mobile-nav">
-      <li>
-        <a href="#about" class="waves-effect waves-js">
-          <i class="material-icons primary-js-text text-darken-2">person</i>
-          Sobre mí
-        </a>
-      </li>
-      <li>
-        <a href="#skills" class="waves-effect waves-js">
-          <i class="material-icons primary-js-text text-darken-2">code</i>
-          Tecnologías
-        </a>
-      </li>
-      <li>
-        <a href="#proyects" class="waves-effect waves-js">
-          <i class="material-icons primary-js-text text-darken-2">web</i>
-          Proyectos
-        </a>
-      </li>
-      <li>
-        <a href="#contact" class="waves-effect waves-js">
-          <i class="material-icons primary-js-text text-darken-2">email</i>
-          Contacto
-        </a>
-      </li>
-    </ul>
+        </li>
+        <li>
+          <a href="#proyects" class="waves-effect waves-js">
+            <i class="material-icons primary-js-text text-darken-2">web</i>
+            Proyectos
+          </a>
+        </li>
+        <li>
+          <a href="#contact" class="waves-effect waves-js">
+            <i class="material-icons primary-js-text text-darken-2">email</i>
+            Contacto
+          </a>
+        </li>
+      </ul>
+      <!-- Hero -->
+      <div class="container header__content">
+        <img
+          src="../images/brand-logos/logo-vertical-white.svg"
+          alt="Logo blanco de JSamuel"
+        />
+        <h1 class="center-align white-text">Desarrollador Frontend</h1>
+      </div>
+    </header>
     <!-- Materialize -->
     <script src="js/bin/materialize.min.js"></script>
     <script>
-      M.AutoInit();
+      document.addEventListener("DOMContentLoaded", function () {
+        M.AutoInit();
+        document.querySelector("#header").classList.add("animate");
+      });
     </script>
   </body>
 </html>
