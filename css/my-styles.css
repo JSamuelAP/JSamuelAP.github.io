@@ -88,4 +88,17 @@ nav .brand-logo img {
     border-bottom-width: 10vh;
   }
 }
+
+@font-face {
+  font-family: "Ubuntu Mono";
+  src: url(../fonts/UbuntuMono-Regular.ttf);
+}
+
+h1,
+h2,
+h3,
+h4,
+h5 {
+  font-family: "Ubuntu Mono", monospace;
+}
 /*# sourceMappingURL=my-styles.css.map */
