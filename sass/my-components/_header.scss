@@ -6,6 +6,25 @@
   background-position: center;
   background-attachment: fixed;
   background-size: cover;
+
+  &__content {
+    height: calc(80vh - 64px);
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    img {
+      height: 40vh;
+      display: block;
+      margin: 0 auto;
+    }
+    @media screen and (max-width: 600px) {
+      height: calc(80vh - 56px);
+      h1 {
+        font-size: 2.5rem;
+      }
+    }
+  }
+
   &::before,
   &::after {
     content: "";

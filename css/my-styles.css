@@ -22,6 +22,35 @@ nav .brand-logo img {
   background-size: cover;
 }
 
+.header__content {
+  height: calc(80vh - 64px);
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+}
+
+.header__content img {
+  height: 40vh;
+  display: block;
+  margin: 0 auto;
+}
+
+@media screen and (max-width: 600px) {
+  .header__content {
+    height: calc(80vh - 56px);
+  }
+  .header__content h1 {
+    font-size: 2.5rem;
+  }
+}
+
 .header::before, .header::after {
   content: "";
   display: block;
