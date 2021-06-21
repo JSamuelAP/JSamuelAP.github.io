@@ -93,7 +93,7 @@
     <link rel="stylesheet" href="css/my-styles.min.css" />
   </head>
   <body>
-    <header class="header">
+    <header class="header" id="header">
       <!-- Navbar -->
       <div class="navbar-fixed">
         <nav class="white">
@@ -136,12 +136,14 @@
         <li><a href="#proyects" class="waves-effect waves-js">Proyectos</a></li>
         <li><a href="#contact" class="waves-effect waves-js">Contacto</a></li>
       </ul>
-      <!-- Hero -->
     </header>
     <!-- Materialize -->
     <script src="js/bin/materialize.min.js"></script>
     <script>
-      M.AutoInit();
+      document.addEventListener("DOMContentLoaded", function () {
+        M.AutoInit();
+        document.querySelector("#header").classList.add("animate");
+      });
     </script>
   </body>
 </html>

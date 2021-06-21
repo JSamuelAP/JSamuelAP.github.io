@@ -13,11 +13,50 @@ nav .brand-logo img {
 }
 
 .header {
-  min-height: 100vh;
+  position: relative;
+  height: 100vh;
   background-image: -webkit-gradient(linear, left top, left bottom, from(rgba(0, 83, 46, 0.55))), url("../images/hero.jpg");
   background-image: linear-gradient(rgba(0, 83, 46, 0.55)), url("../images/hero.jpg");
   background-position: center;
   background-attachment: fixed;
   background-size: cover;
+}
+
+.header::before, .header::after {
+  content: "";
+  display: block;
+  position: absolute;
+  bottom: 0;
+  border-style: solid;
+  border-width: 0 25vw;
+}
+
+.header::before {
+  left: 0;
+  border-color: transparent transparent #fff #fff;
+}
+
+.header::after {
+  right: 0;
+  border-color: transparent #fff #fff transparent;
+}
+
+.header.animate::before, .header.animate::after {
+  -webkit-animation: hero 1s 2s ease forwards;
+          animation: hero 1s 2s ease forwards;
+}
+
+@-webkit-keyframes hero {
+  to {
+    border-top-width: 10vh;
+    border-bottom-width: 10vh;
+  }
+}
+
+@keyframes hero {
+  to {
+    border-top-width: 10vh;
+    border-bottom-width: 10vh;
+  }
 }
 /*# sourceMappingURL=my-styles.css.map */
