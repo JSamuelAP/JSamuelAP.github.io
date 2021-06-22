@@ -101,4 +101,18 @@ h4,
 h5 {
   font-family: "Ubuntu Mono", monospace;
 }
+
+.about__img {
+  display: block;
+  width: 100%;
+  max-width: 200px;
+  margin: 1rem auto 0;
+}
+
+@media screen and (max-width: 992px) {
+  .about__img {
+    width: auto;
+    margin-top: 0;
+  }
+}
 /*# sourceMappingURL=my-styles.css.map */

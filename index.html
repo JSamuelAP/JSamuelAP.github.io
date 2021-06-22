@@ -171,7 +171,7 @@
         <section class="section" id="about">
           <h2 class="center-align">Sobre mí</h2>
           <div class="row">
-            <div class="col s12 l7 xl8">
+            <div class="col s12 l9">
               <p>
                 Mi nombre es José Samuel Aldana Pérez, soy un joven mexicano 🇲🇽
                 apasionado por el mundo de la web, aún soy un novato, pero lo
@@ -190,11 +190,18 @@
                 colaborar en proyectos reales con una pizca de código 👌.
               </p>
             </div>
-            <div class="col s12 l5 xl4">
-              <img
-                src="https://via.placeholder.com/150?text=JSamuel"
-                alt="Fotografía mia"
-              />
+            <div class="col s12 l3">
+              <picture>
+                <source
+                  media="(max-width: 992px)"
+                  srcset="https://via.placeholder.com/150?text=JSamuel"
+                />
+                <img
+                  src="https://via.placeholder.com/150x200?text=JSamuel"
+                  class="about__img"
+                  alt="Fotografía mia"
+                />
+              </picture>
             </div>
           </div>
         </section>
