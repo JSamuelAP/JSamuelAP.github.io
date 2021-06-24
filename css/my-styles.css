@@ -129,4 +129,26 @@ strong {
   width: 100px;
   height: 100px;
 }
+
+@media screen and (max-width: 992px) {
+  #contact h2 {
+    text-align: center;
+  }
+}
+
+.contact__link {
+  display: block;
+  margin-top: 2.3rem;
+  text-align: center;
+}
+
+@media screen and (max-width: 992px) {
+  .contact__link {
+    margin-top: 0;
+  }
+}
+
+.contact__logo {
+  width: 50px;
+}
 /*# sourceMappingURL=my-styles.css.map */
