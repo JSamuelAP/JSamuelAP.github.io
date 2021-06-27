@@ -130,8 +130,8 @@ strong {
 }
 
 .skills__img {
-  width: 100px;
-  height: 100px;
+  width: 6.5rem;
+  height: 6.5rem;
 }
 
 @media screen and (max-width: 992px) {
