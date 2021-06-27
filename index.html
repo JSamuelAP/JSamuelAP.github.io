@@ -91,6 +91,8 @@
     <link rel="stylesheet" href="css/materialize.min.css" />
     <!-- My styles -->
     <link rel="stylesheet" href="css/my-styles.min.css" />
+    <!-- ScrollReveal -->
+    <script src="js/scrollreveal.js"></script>
   </head>
   <body>
     <header class="header" id="header">
@@ -210,19 +212,11 @@
         <section class="section" id="skills">
           <h2 class="center-align">Tecnologías</h2>
           <p>
-            Actualmente sigo estudiando
-            <strong>JavaScript</strong>
-            , para después aprender
-            <strong>NodeJS</strong>
-            y
-            <strong>ReactJS</strong>
-            . En cuanto a CSS sé trabajar con
-            <strong>Flexbox</strong>
-            ,
-            <strong>CSS Grid</strong>
-            y utilizo la metodología
-            <strong>BEM</strong>
-            .
+            Actualmente sigo estudiando <strong>JavaScript</strong>, para
+            después aprender <strong>NodeJS</strong> y <strong>ReactJS</strong>.
+            En cuanto a CSS sé trabajar con <strong>Flexbox</strong>,
+            <strong>CSS Grid</strong> y utilizo la metodología
+            <strong>BEM</strong>.
           </p>
           <div class="row">
             <div class="col s12 m6 l3">
@@ -610,6 +604,7 @@
           </div>
         </section>
       </div>
+      <!-- Contact -->
       <section class="section primary-js darken-3" id="contact">
         <div class="container">
           <div class="row">
@@ -672,13 +667,14 @@
         </div>
       </section>
     </main>
+    <!-- Footer -->
+    <footer class="page-footer">
+      <div class="container center-align">
+        <div class="section">&copy; <strong>JSamuel</strong> 2021</div>
+      </div>
+    </footer>
     <!-- Materialize -->
     <script src="js/bin/materialize.min.js"></script>
-    <script>
-      document.addEventListener("DOMContentLoaded", function () {
-        M.AutoInit();
-        document.querySelector("#header").classList.add("animate");
-      });
-    </script>
+    <script src="js/index.js"></script>
   </body>
 </html>

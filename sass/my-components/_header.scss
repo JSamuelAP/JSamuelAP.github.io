@@ -44,7 +44,7 @@
   }
   &.animate::before,
   &.animate::after {
-    animation: hero 1s 2s ease forwards;
+    animation: hero 1s 3500ms ease forwards;
   }
 }
 @keyframes hero {
