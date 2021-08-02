@@ -1,0 +1,71 @@
+@import "../node_modules/materialize-css/sass/components/color-variables";
+
+// Typography
+@import url("https://fonts.googleapis.com/css2?family=Roboto+Mono:wght@300;400;700&family=Ubuntu+Mono&display=swap");
+$font-stack: "Roboto Mono", monospace;
+
+// Colors
+$primary-js: (
+  "base": #009d71,
+  "lighten-5": #e0f3ed,
+  "lighten-4": #b3e2d1,
+  "lighten-3": #83cfb5,
+  "lighten-2": #51bc98,
+  "lighten-1": #2aac83,
+  "darken-1": #009065,
+  "darken-2": #007f56,
+  "darken-3": #006f49,
+  "darken-4": #00532e,
+);
+$secondary-js: (
+  "base": #4d1c61,
+  "lighten-9": #f2e5f0,
+  "lighten-8": #debedb,
+  "lighten-7": #ca93c3,
+  "lighten-6": #b36aab,
+  "lighten-5": #a34d9a,
+  "lighten-4": #92348a,
+  "lighten-3": #872f84,
+  "lighten-2": #77297c,
+  "lighten-1": #682473,
+);
+$tertiary-js: (
+  "base": #faca50,
+  "lighten-4": #fef8e4,
+  "lighten-3": #fdecbb,
+  "lighten-2": #fce091,
+  "lighten-1": #fbd468,
+  "darken-1": #f8c147,
+  "darken-2": #f7b442,
+  "darken-3": #f4a33d,
+  "darken-4": #f2943a,
+  "darken-5": #ef7931,
+);
+
+$my-colors: (
+  "primary-js": $primary-js,
+  "secondary-js": $secondary-js,
+  "tertiary-js": $tertiary-js,
+);
+
+// Add my colors to map colors
+$colors: map-merge($colors, $my-colors);
+
+$primary-color: color("primary-js", "base");
+$secondary-color: color("secondary-js", "base");
+
+/*
+ variables to custom
+https://github.com/JSamuelAP/JSamuelAP.github.io/commit/f28ff904b7672cea41a3fe168ffbea9bb388258b#diff-bbc5da2ab7b7b4ed9e893a8c53717370f61732e91eddca41dc300bb848045ecd
+*/
+
+@import "../node_modules/materialize-css/sass/materialize.scss";
+
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+  font-family: "Ubuntu Mono", monospace;
+}
