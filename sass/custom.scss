@@ -54,6 +54,8 @@ $colors: map-merge($colors, $my-colors);
 $primary-color: color("primary-js", "base");
 $secondary-color: color("secondary-js", "base");
 
+$navbar-font-color: color("grey", "darken-4");
+
 /*
  variables to custom
 https://github.com/JSamuelAP/JSamuelAP.github.io/commit/f28ff904b7672cea41a3fe168ffbea9bb388258b#diff-bbc5da2ab7b7b4ed9e893a8c53717370f61732e91eddca41dc300bb848045ecd
