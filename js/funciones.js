@@ -75,5 +75,6 @@ function imprimirProyectosUI() {
     proyectsFragment.appendChild(cloneCard);
   });
 
+  proyectsSection.textContent = "";
   proyectsSection.appendChild(proyectsFragment);
 }
