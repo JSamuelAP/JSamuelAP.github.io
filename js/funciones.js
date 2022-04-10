@@ -2,8 +2,8 @@ function iniciarApp() {
   // Materialize CSS
   M.AutoInit();
 
-  configurarAnimaciones();
   imprimirProyectosUI();
+  configurarAnimaciones();
 }
 
 function configurarAnimaciones() {
