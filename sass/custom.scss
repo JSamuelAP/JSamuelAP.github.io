@@ -196,6 +196,7 @@ html.sr .header__content {
   }
   &__logo {
     width: 3rem;
+    transition: transform 0.3s;
   }
   &__logo:hover {
     transform: scale(1.1);
