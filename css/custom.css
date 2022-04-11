@@ -9269,6 +9269,10 @@ h1, h2, h3, h4, h5, h6 {
   font-family: "Ubuntu Mono", monospace;
 }
 
+strong {
+  font-weight: 700;
+}
+
 /*
  * Navbar
  */
@@ -9376,13 +9380,13 @@ html.sr .header__content {
 .about__img {
   display: block;
   width: 100%;
-  max-width: 200px;
+  max-width: 120px;
   margin: 1rem auto 0;
 }
 
 @media screen and (max-width: 992px) {
   .about__img {
-    width: auto;
+    max-width: 200px;
     margin-top: 0;
   }
 }
