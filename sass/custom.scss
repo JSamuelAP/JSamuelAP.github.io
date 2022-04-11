@@ -139,7 +139,7 @@ nav .brand-logo {
   }
   &.animate::before,
   &.animate::after {
-    animation: hero 1s 3500ms ease forwards;
+    animation: hero 1s 2500ms ease forwards;
   }
 }
 @keyframes hero {
@@ -147,6 +147,9 @@ nav .brand-logo {
     border-top-width: 10vh;
     border-bottom-width: 10vh;
   }
+}
+html.sr .header__content {
+  visibility: hidden;
 }
 
 /*

@@ -11,7 +11,7 @@ function configurarAnimaciones() {
   window.sr = ScrollReveal();
 
   sr.reveal(".header__content", {
-    delay: 2000,
+    delay: 1000,
     duration: 1500,
     origin: "bottom",
     distance: "-500px",

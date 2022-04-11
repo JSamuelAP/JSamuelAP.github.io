@@ -9348,8 +9348,8 @@ nav .brand-logo img {
 }
 
 .header.animate::before, .header.animate::after {
-  -webkit-animation: hero 1s 3500ms ease forwards;
-          animation: hero 1s 3500ms ease forwards;
+  -webkit-animation: hero 1s 2500ms ease forwards;
+          animation: hero 1s 2500ms ease forwards;
 }
 
 @-webkit-keyframes hero {
@@ -9364,6 +9364,10 @@ nav .brand-logo img {
     border-top-width: 10vh;
     border-bottom-width: 10vh;
   }
+}
+
+html.sr .header__content {
+  visibility: hidden;
 }
 
 /*
