@@ -37,7 +37,7 @@ function configurarAnimaciones() {
 }
 
 function imprimirProyectosUI() {
-  const proyectsSection = document.querySelector("#proyects .row");
+  const proyectsSection = document.querySelector("#proyects .proyects__grid");
   const proyectsFragment = document.createDocumentFragment();
 
   proyectos.forEach((proyecto) => {

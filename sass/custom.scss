@@ -178,6 +178,21 @@ html.sr .header__content {
 }
 
 /*
+ * Proyects
+ */
+.proyects__grid {
+  display: grid;
+  grid-template-columns: 1fr;
+  @media screen and (min-width: 600px) {
+    grid-template-columns: repeat(2, 1fr);
+    column-gap: 20px;
+  }
+  @media screen and (min-width: 992px) {
+    grid-template-columns: repeat(3, 1fr);
+  }
+}
+
+/*
  * Contact
  */
 #contact h2 {

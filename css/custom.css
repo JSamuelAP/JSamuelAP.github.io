@@ -9400,6 +9400,32 @@ html.sr .header__content {
 }
 
 /*
+ * Proyects
+ */
+.proyects__grid {
+  display: -ms-grid;
+  display: grid;
+  -ms-grid-columns: 1fr;
+      grid-template-columns: 1fr;
+}
+
+@media screen and (min-width: 600px) {
+  .proyects__grid {
+    -ms-grid-columns: (1fr)[2];
+        grid-template-columns: repeat(2, 1fr);
+    -webkit-column-gap: 20px;
+            column-gap: 20px;
+  }
+}
+
+@media screen and (min-width: 992px) {
+  .proyects__grid {
+    -ms-grid-columns: (1fr)[3];
+        grid-template-columns: repeat(3, 1fr);
+  }
+}
+
+/*
  * Contact
  */
 @media screen and (max-width: 992px) {
