@@ -9286,8 +9286,32 @@ nav .brand-logo img {
   height: 100%;
 }
 
+nav .switch i {
+  display: inline-block;
+}
+
+nav .switch span.lever {
+  margin: 0 0 15px;
+}
+
 .waves-effect.waves-js .waves-ripple {
   background-color: rgba(131, 207, 181, 0.65);
+}
+
+.sidenav .switch {
+  margin-top: 2rem;
+}
+
+.sidenav span.lever {
+  margin-bottom: 15px;
+}
+
+.header .switch input[type="checkbox"]:checked + span.lever {
+  background-color: #b3e2d1;
+}
+
+.header .switch input[type="checkbox"]:checked + span.lever::after {
+  background-color: #009d71;
 }
 
 /*
