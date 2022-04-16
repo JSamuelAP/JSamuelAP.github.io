@@ -1,10 +1,15 @@
-.about__img {
-  display: block;
-  width: 100%;
-  max-width: 120px;
-  margin: 1rem auto 0;
-  @media screen and (max-width: 992px) {
-    max-width: 200px;
-    margin-top: 0;
+.about {
+  a:hover {
+    text-decoration: underline;
+  }
+  &__img {
+    display: block;
+    margin: 1rem auto 0;
+    width: 100%;
+    max-width: 120px;
+    @media screen and (max-width: 992px) {
+      max-width: 200px;
+      margin-top: 0;
+    }
   }
 }
