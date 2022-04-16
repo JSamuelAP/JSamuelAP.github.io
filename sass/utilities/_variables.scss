@@ -57,3 +57,11 @@ $secondary-color: color("secondary-js", "base");
  */
 @import url("https://fonts.googleapis.com/css2?family=Roboto+Mono:wght@300;400;700&family=Ubuntu+Mono&display=swap");
 $font-stack: "Roboto Mono", monospace;
+
+/*
+ * Navbar
+ */
+$navbar-font-color: color("grey", "darken-4");
+$navbar-background-color: #fff;
+$switch-lever-color: color("primary-js", "lighten-4");
+$switch-lever-after-color: color("primary-js", "base");

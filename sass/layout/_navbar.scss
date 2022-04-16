@@ -1,6 +1,5 @@
-$navbar-font-color: color("grey", "darken-4");
-
 nav {
+  background-color: $navbar-background-color;
   .brand-logo {
     height: 100%;
     padding: 0.5rem 0;
@@ -9,7 +8,11 @@ nav {
       height: 100%;
     }
   }
+  .waves-effect {
+    display: block;
+  }
   .switch {
+    height: 64px;
     i {
       display: inline-block;
     }
@@ -19,7 +22,7 @@ nav {
   }
 }
 .waves-effect.waves-js .waves-ripple {
-  background-color: rgba(#83cfb5, 0.65);
+  background-color: rgba(color("primary-js", "lighten-3"), 0.65);
 }
 .sidenav {
   .switch {
@@ -29,9 +32,11 @@ nav {
     margin-bottom: 15px;
   }
 }
-.header .switch input[type="checkbox"]:checked + span.lever {
-  background-color: map-get($map: $primary-js, $key: lighten-4);
-}
-.header .switch input[type="checkbox"]:checked + span.lever::after {
-  background-color: map-get($map: $primary-js, $key: base);
+.switch {
+  input[type="checkbox"]:checked + span.lever {
+    background-color: $switch-lever-color;
+  }
+  input[type="checkbox"]:checked + span.lever::after {
+    background-color: $switch-lever-after-color;
+  }
 }
