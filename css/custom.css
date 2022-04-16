@@ -6,6 +6,9 @@
  */
 @import url("https://fonts.googleapis.com/css2?family=Roboto+Mono:wght@300;400;700&family=Ubuntu+Mono&display=swap");
 /*
+ * Global
+ */
+/*
  * Navbar
  */
 /*
@@ -9281,6 +9284,11 @@ strong {
   font-weight: 700;
 }
 
+body.dark {
+  background-color: #000;
+  color: #fff;
+}
+
 nav {
   background-color: #fff;
 }
@@ -9311,6 +9319,22 @@ nav .switch span.lever {
   margin: 0 0 15px;
 }
 
+body.dark nav {
+  background-color: #111;
+}
+
+body.dark nav ul li a {
+  color: #fff;
+}
+
+body.dark nav ul li a:hover {
+  background-color: rgba(255, 255, 255, 0.1);
+}
+
+body.dark nav .sidenav-trigger {
+  color: #fff;
+}
+
 .waves-effect.waves-js .waves-ripple {
   background-color: rgba(131, 207, 181, 0.65);
 }
@@ -9323,12 +9347,52 @@ nav .switch span.lever {
   margin-bottom: 15px;
 }
 
+.switch .sun {
+  color: #faca50;
+}
+
+.switch .moon {
+  color: #4d1c61;
+}
+
 .switch input[type="checkbox"]:checked + span.lever {
   background-color: #b3e2d1;
 }
 
 .switch input[type="checkbox"]:checked + span.lever::after {
   background-color: #009d71;
+}
+
+body.dark .switch .sun {
+  color: #fbd468;
+}
+
+body.dark .switch .moon {
+  color: #77297c;
+}
+
+body.dark .switch input + span.lever {
+  background-color: #263238;
+}
+
+.sidenav li a:hover {
+  background-color: rgba(255, 255, 255, 0.1);
+}
+
+.sidenav li a i.material-icons {
+  color: #007f56;
+}
+
+body.dark .sidenav {
+  background-color: #111;
+}
+
+body.dark .sidenav a {
+  color: #fff;
+}
+
+body.dark .sidenav a i {
+  color: #2aac83;
 }
 
 .header {

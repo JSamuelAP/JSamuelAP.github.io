@@ -59,12 +59,26 @@ $secondary-color: color("secondary-js", "base");
 $font-stack: "Roboto Mono", monospace;
 
 /*
+ * Global
+ */
+$bg-color-dark: #000;
+$font-color-light: #fff;
+
+/*
  * Navbar
  */
 $navbar-font-color: color("grey", "darken-4");
-$navbar-background-color: #fff;
+$navbar-bg-color: #fff;
+$navbar-bg-color-dark: #111;
+$link-color-hover-light: rgba(255, 255, 255, 0.1);
+$icon-color: color("primary-js", "darken-2");
+$icon-color-light: color("primary-js", "lighten-1");
+$sun-color: color("tertiary-js", "base");
+$sun-color-light: color("tertiary-js", "lighten-1");
+$moon-color: color("secondary-js", "base");
+$moon-color-light: color("secondary-js", "lighten-2");
 $switch-lever-color: color("primary-js", "lighten-4");
-$switch-lever-after-color: color("primary-js", "base");
+$switch-lever-after-color: $primary-color;
 
 /*
  * Hero
