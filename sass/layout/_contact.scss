@@ -1,9 +1,9 @@
-#contact h2 {
-  @media screen and (max-width: 992px) {
-    text-align: center;
-  }
-}
 .contact {
+  h2 {
+    @media screen and (max-width: 992px) {
+      text-align: center;
+    }
+  }
   &__link {
     display: block;
     margin-top: 2.3rem;

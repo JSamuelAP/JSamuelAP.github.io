@@ -9459,7 +9459,7 @@ html.sr .header__content {
 }
 
 @media screen and (max-width: 992px) {
-  #contact h2 {
+  .contact h2 {
     text-align: center;
   }
 }
