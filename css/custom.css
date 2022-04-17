@@ -9300,7 +9300,7 @@ strong {
 }
 
 body.dark {
-  background-color: #000;
+  background-color: #1c121c;
   color: #fff;
 }
 
@@ -9335,7 +9335,7 @@ nav .switch span.lever {
 }
 
 body.dark nav {
-  background-color: #111;
+  background-color: #261c26;
 }
 
 body.dark nav ul li a {
@@ -9387,7 +9387,7 @@ body.dark .switch .moon {
 }
 
 body.dark .switch input + span.lever {
-  background-color: #263238;
+  background-color: #455a64;
 }
 
 .sidenav li a:hover {
@@ -9399,7 +9399,7 @@ body.dark .switch input + span.lever {
 }
 
 body.dark .sidenav {
-  background-color: #111;
+  background-color: #261c26;
 }
 
 body.dark .sidenav a {
@@ -9478,16 +9478,16 @@ html.sr .header__content {
 }
 
 body.dark .header {
-  background-image: -webkit-gradient(linear, left top, left bottom, from(rgba(0, 83, 46, 0.45))), url("../images/hero.jpg");
-  background-image: linear-gradient(rgba(0, 83, 46, 0.45)), url("../images/hero.jpg");
+  background-image: -webkit-gradient(linear, left top, left bottom, from(rgba(77, 28, 97, 0.55))), url("../images/hero.jpg");
+  background-image: linear-gradient(rgba(77, 28, 97, 0.55)), url("../images/hero.jpg");
 }
 
 body.dark .header::before {
-  border-color: transparent transparent #000 #000;
+  border-color: transparent transparent #1c121c #1c121c;
 }
 
 body.dark .header::after {
-  border-color: transparent #000 #000 transparent;
+  border-color: transparent #1c121c #1c121c transparent;
 }
 
 @-webkit-keyframes hero {
@@ -9536,7 +9536,7 @@ body.dark .about a {
 }
 
 body.dark .skills .card-panel {
-  background-color: #111;
+  background-color: #261c26;
   -webkit-box-shadow: none;
           box-shadow: none;
 }
@@ -9565,7 +9565,7 @@ body.dark .skills .card-panel {
 }
 
 body.dark .proyects .card {
-  background-color: #111;
+  background-color: #261c26;
   -webkit-box-shadow: none;
           box-shadow: none;
 }
@@ -9575,7 +9575,7 @@ body.dark .proyects .card-reveal {
 }
 
 body.dark .proyects .card .chip {
-  background-color: #222;
+  background-color: #302630;
   color: #fff;
 }
 
@@ -9615,11 +9615,11 @@ body.dark .proyects .card .chip {
 }
 
 body.dark .contact {
-  background-color: #111;
+  background-color: #261c26;
 }
 
 body.dark .page-footer {
   border-top: 1px solid rgba(160, 160, 160, 0.2);
-  background-color: #111;
+  background-color: #261c26;
 }
 /*# sourceMappingURL=custom.css.map */

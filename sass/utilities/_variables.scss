@@ -61,7 +61,8 @@ $font-stack: "Roboto Mono", monospace;
 /*
  * Global
  */
-$bg-color-dark: #000;
+$bg-color-dark: rgb(28, 18, 28);
+$surface-color-dark: rgb(38, 28, 38);
 $font-color-light: #fff;
 
 /*
@@ -69,7 +70,7 @@ $font-color-light: #fff;
  */
 $navbar-font-color: color("grey", "darken-4");
 $navbar-bg-color: #fff;
-$navbar-bg-color-dark: #111;
+$navbar-bg-color-dark: $surface-color-dark;
 $link-color-hover-light: rgba(255, 255, 255, 0.1);
 $icon-color: color("primary-js", "darken-2");
 $icon-color-light: color("primary-js", "lighten-1");
@@ -95,21 +96,21 @@ $link-color-light: color("primary-js", "lighten-1");
 /*
  * Skills
  */
-$card-bg-dark: #111;
+$card-bg-dark: $surface-color-dark;
 
 /*
  * Proyects
  */
-$chip-bg-dark: #222;
+$chip-bg-dark: rgb(48, 38, 48);
 
 /*
  * Contact
  */
 $contact-bg-color: $primary-color;
-$contact-bg-color-dark: #111;
+$contact-bg-color-dark: $surface-color-dark;
 
 /*
  * Footer
  */
 $footer-bg-color: color("primary-js", "darken-2");
-$footer-bg-color-dark: #111;
+$footer-bg-color-dark: $surface-color-dark;

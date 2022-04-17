@@ -53,9 +53,7 @@
   }
 
   body.dark & {
-    background-image: linear-gradient(
-        rgba(color("primary-js", "darken-4"), 0.45)
-      ),
+    background-image: linear-gradient(rgba($secondary-color, 0.55)),
       url("../images/hero.jpg");
     &::before {
       border-color: transparent transparent $hero-triangles-color-dark
