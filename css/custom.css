@@ -20,6 +20,9 @@
 /*
  * Skills
  */
+/*
+ * Proyects
+ */
 .materialize-red {
   background-color: #e51c23 !important;
 }
@@ -9553,6 +9556,21 @@ body.dark .skills .card-panel {
     -ms-grid-columns: (1fr)[3];
         grid-template-columns: repeat(3, 1fr);
   }
+}
+
+body.dark .proyects .card {
+  background-color: #111;
+  -webkit-box-shadow: none;
+          box-shadow: none;
+}
+
+body.dark .proyects .card-reveal {
+  background-color: inherit;
+}
+
+body.dark .proyects .card .chip {
+  background-color: #222;
+  color: #fff;
 }
 
 @media screen and (max-width: 992px) {

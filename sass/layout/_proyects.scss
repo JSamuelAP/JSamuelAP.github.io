@@ -10,4 +10,18 @@
       grid-template-columns: repeat(3, 1fr);
     }
   }
+
+  .card {
+    body.dark & {
+      background-color: $card-bg-dark;
+      box-shadow: none;
+      &-reveal {
+        background-color: inherit;
+      }
+      .chip {
+        background-color: $chip-bg-dark;
+        color: $font-color-light;
+      }
+    }
+  }
 }
