@@ -14,6 +14,9 @@
 /*
  * Hero
  */
+/*
+ * About me
+ */
 .materialize-red {
   background-color: #e51c23 !important;
 }
@@ -2856,7 +2859,7 @@ ul:not(.browser-default) > li {
 }
 
 a {
-  color: #039be5;
+  color: #009d71;
   text-decoration: none;
   -webkit-tap-highlight-color: transparent;
 }
@@ -9489,8 +9492,16 @@ body.dark .header::after {
   }
 }
 
+.about a {
+  color: #009d71;
+}
+
 .about a:hover {
   text-decoration: underline;
+}
+
+body.dark .about a {
+  color: #2aac83;
 }
 
 .about__img {

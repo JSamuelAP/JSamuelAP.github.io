@@ -1,7 +1,14 @@
 .about {
-  a:hover {
-    text-decoration: underline;
+  a {
+    color: $link-color;
+    &:hover {
+      text-decoration: underline;
+    }
+    body.dark & {
+      color: $link-color-light;
+    }
   }
+
   &__img {
     display: block;
     margin: 1rem auto 0;
