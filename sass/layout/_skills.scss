@@ -3,4 +3,10 @@
     width: 6.5rem;
     height: 6.5rem;
   }
+  .card-panel {
+    body.dark & {
+      background-color: $card-bg-dark;
+      box-shadow: none;
+    }
+  }
 }

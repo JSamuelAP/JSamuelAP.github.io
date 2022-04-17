@@ -17,6 +17,9 @@
 /*
  * About me
  */
+/*
+ * Skills
+ */
 .materialize-red {
   background-color: #e51c23 !important;
 }
@@ -9521,6 +9524,12 @@ body.dark .about a {
 .skills__img {
   width: 6.5rem;
   height: 6.5rem;
+}
+
+body.dark .skills .card-panel {
+  background-color: #111;
+  -webkit-box-shadow: none;
+          box-shadow: none;
 }
 
 .proyects__grid {
