@@ -9462,6 +9462,19 @@ html.sr .header__content {
           animation: hero 1s 2500ms ease forwards;
 }
 
+body.dark .header {
+  background-image: -webkit-gradient(linear, left top, left bottom, from(rgba(0, 83, 46, 0.45))), url("../images/hero.jpg");
+  background-image: linear-gradient(rgba(0, 83, 46, 0.45)), url("../images/hero.jpg");
+}
+
+body.dark .header::before {
+  border-color: transparent transparent #000 #000;
+}
+
+body.dark .header::after {
+  border-color: transparent #000 #000 transparent;
+}
+
 @-webkit-keyframes hero {
   to {
     border-top-width: 10vh;

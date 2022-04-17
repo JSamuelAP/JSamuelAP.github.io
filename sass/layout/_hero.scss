@@ -51,6 +51,21 @@
   &.animate::after {
     animation: hero 1s 2500ms ease forwards;
   }
+
+  body.dark & {
+    background-image: linear-gradient(
+        rgba(color("primary-js", "darken-4"), 0.45)
+      ),
+      url("../images/hero.jpg");
+    &::before {
+      border-color: transparent transparent $hero-triangles-color-dark
+        $hero-triangles-color-dark;
+    }
+    &::after {
+      border-color: transparent $hero-triangles-color-dark
+        $hero-triangles-color-dark transparent;
+    }
+  }
 }
 @keyframes hero {
   to {
