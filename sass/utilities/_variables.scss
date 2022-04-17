@@ -107,3 +107,9 @@ $chip-bg-dark: #222;
  */
 $contact-bg-color: $primary-color;
 $contact-bg-color-dark: #111;
+
+/*
+ * Footer
+ */
+$footer-bg-color: color("primary-js", "darken-2");
+$footer-bg-color-dark: #111;

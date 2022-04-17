@@ -26,6 +26,9 @@
 /*
  * Contact
  */
+/*
+ * Footer
+ */
 .materialize-red {
   background-color: #e51c23 !important;
 }
@@ -3206,7 +3209,7 @@ ul.staggered-list li {
 .page-footer {
   padding-top: 20px;
   color: #fff;
-  background-color: #009d71;
+  background-color: #007f56;
 }
 
 .page-footer .footer-copyright {
@@ -9612,6 +9615,11 @@ body.dark .proyects .card .chip {
 }
 
 body.dark .contact {
+  background-color: #111;
+}
+
+body.dark .page-footer {
+  border-top: 1px solid rgba(160, 160, 160, 0.2);
   background-color: #111;
 }
 /*# sourceMappingURL=custom.css.map */
