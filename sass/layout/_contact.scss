@@ -1,4 +1,5 @@
 .contact {
+  background-color: $contact-bg-color;
   h2 {
     @media screen and (max-width: 992px) {
       text-align: center;
@@ -18,5 +19,8 @@
   }
   &__logo:hover {
     transform: scale(1.1);
+  }
+  body.dark & {
+    background-color: $contact-bg-color-dark;
   }
 }

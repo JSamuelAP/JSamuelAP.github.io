@@ -23,6 +23,9 @@
 /*
  * Proyects
  */
+/*
+ * Contact
+ */
 .materialize-red {
   background-color: #e51c23 !important;
 }
@@ -9573,6 +9576,10 @@ body.dark .proyects .card .chip {
   color: #fff;
 }
 
+.contact {
+  background-color: #009d71;
+}
+
 @media screen and (max-width: 992px) {
   .contact h2 {
     text-align: center;
@@ -9602,5 +9609,9 @@ body.dark .proyects .card .chip {
 .contact__logo:hover {
   -webkit-transform: scale(1.1);
           transform: scale(1.1);
+}
+
+body.dark .contact {
+  background-color: #111;
 }
 /*# sourceMappingURL=custom.css.map */
