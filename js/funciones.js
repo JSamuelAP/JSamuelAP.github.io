@@ -1,7 +1,10 @@
+"use strict";
+
 function iniciarApp() {
   // Materialize CSS
   M.AutoInit();
 
+  cargarTema();
   imprimirProyectosUI();
   configurarAnimaciones();
 }
@@ -77,4 +80,49 @@ function imprimirProyectosUI() {
 
   proyectsSection.textContent = "";
   proyectsSection.appendChild(proyectsFragment);
+}
+
+function cargarTema() {
+  const body = document.body;
+  const themeSwitcherNavbar = document.querySelector("#theme-switcher-desktop");
+  const themeSwitcherSidenav = document.querySelector("#theme-switcher-mobile");
+  const configuracionActual = localStorage.getItem("theme");
+  let tema = undefined;
+
+  if (configuracionActual) {
+    // Configuración encontrada en LocalStorage
+    tema = configuracionActual;
+    cambiarTema();
+  } else {
+    // Tema del navegador
+    const prefersDarkScheme = window.matchMedia("(prefers-color-scheme: dark)");
+    tema = prefersDarkScheme.matches ? "dark" : "light";
+    cambiarTema();
+  }
+
+  themeSwitcherNavbar.addEventListener("click", (e) => {
+    tema = themeSwitcherNavbar.checked ? "dark" : "light";
+    cambiarTema();
+  });
+  themeSwitcherSidenav.addEventListener("click", (e) => {
+    tema = themeSwitcherSidenav.checked ? "dark" : "light";
+    cambiarTema();
+  });
+
+  function cambiarTema() {
+    if (tema === "dark") {
+      themeSwitcherNavbar.checked = true;
+      themeSwitcherSidenav.checked = true;
+      body.classList.add("dark");
+    } else {
+      themeSwitcherNavbar.checked = false;
+      themeSwitcherSidenav.checked = false;
+      body.classList.remove("dark");
+    }
+    guardarTema();
+  }
+
+  function guardarTema() {
+    localStorage.setItem("theme", tema);
+  }
 }
