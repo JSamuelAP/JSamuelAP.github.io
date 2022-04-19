@@ -119,7 +119,36 @@ function cargarTema() {
       themeSwitcherSidenav.checked = false;
       body.classList.remove("dark");
     }
+    cambiarImagenes();
     guardarTema();
+  }
+
+  function cambiarImagenes() {
+    const logo = document.querySelector("#navbar__logo");
+    const logoSource = logo.previousElementSibling;
+    const logoAbout = document.querySelector(".about__img");
+    const logoAboutSource = logoAbout.previousElementSibling;
+    const logoHTML = document.querySelector(".skills__img.html");
+    const logoCSS = document.querySelector(".skills__img.css");
+    const logoGitHub = document.querySelector(".skills__img.github");
+
+    if (tema === "dark") {
+      logo.src = "images/brand-logos/logo-horizontal-white.svg";
+      logoSource.srcset = "images/brand-logos/logo-white.svg";
+      logoAbout.src = "images/brand-logos/logo-vertical-white.svg";
+      logoAboutSource.srcset = "images/brand-logos/logo-horizontal-white.svg";
+      logoHTML.src = "images/skills-logos/html-5-white.svg";
+      logoCSS.src = "images/skills-logos/css-3-white.svg";
+      logoGitHub.src = "images/skills-logos/github-icon-white.svg";
+    } else {
+      logo.src = "images/brand-logos/logo-horizontal.svg";
+      logoSource.srcset = "images/brand-logos/logo.svg";
+      logoAbout.src = "images/brand-logos/logo-vertical-black.svg";
+      logoAboutSource.srcset = "images/brand-logos/logo-horizontal-black.svg";
+      logoHTML.src = "images/skills-logos/html-5.svg";
+      logoCSS.src = "images/skills-logos/css-3.svg";
+      logoGitHub.src = "images/skills-logos/github-icon.svg";
+    }
   }
 
   function guardarTema() {
