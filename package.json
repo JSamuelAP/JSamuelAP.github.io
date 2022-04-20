@@ -3,7 +3,7 @@
     "materialize-css": "^1.0.0-rc.2"
   },
   "name": "portafolio",
-  "version": "1.0.0",
+  "version": "2.0.0",
   "main": "index.js",
   "scripts": {
     "test": "echo \"Error: no test specified\" && exit 1"
@@ -12,12 +12,19 @@
     "type": "git",
     "url": "git+https://github.com/JSamuelAP/JSamuelAP.github.io.git"
   },
-  "keywords": [],
-  "author": "",
+  "keywords": [
+    "javscript",
+    "html",
+    "sass",
+    "portfolio",
+    "materialize-css",
+    "scrollreveal-js"
+  ],
+  "author": "JSamuel",
   "license": "ISC",
   "bugs": {
     "url": "https://github.com/JSamuelAP/JSamuelAP.github.io/issues"
   },
   "homepage": "https://github.com/JSamuelAP/JSamuelAP.github.io#readme",
-  "description": ""
+  "description": "Mi proyecto para demostrar mis habilidades y darme a conocer como desarrollador web"
 }
