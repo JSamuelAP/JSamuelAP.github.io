@@ -4,6 +4,7 @@
     height: 6.5rem;
   }
   .card-panel {
+  @include bg-animation;
     body.dark & {
       background-color: $card-bg-dark;
       box-shadow: none;

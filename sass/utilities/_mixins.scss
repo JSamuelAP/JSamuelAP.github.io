@@ -1,0 +1,9 @@
+$time: 0.5s;
+$timing-function: ease-out;
+
+@mixin bg-animation {
+  transition: background-color $time $timing-function;
+}
+@mixin border-color-animation {
+  transition: border-color $time $timing-function;
+}

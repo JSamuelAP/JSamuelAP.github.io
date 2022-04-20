@@ -1,5 +1,6 @@
 nav {
   background-color: $navbar-bg-color;
+  @include bg-animation;
   .brand-logo {
     height: 100%;
     padding: 0.5rem 0;
@@ -38,11 +39,29 @@ nav {
   background-color: rgba(color("primary-js", "lighten-3"), 0.65);
 }
 .sidenav {
+  @include bg-animation;
+  li a {
+    &:hover {
+      background-color: $link-color-hover-light;
+    }
+    i.material-icons {
+      color: $icon-color;
+    }
+  }
   .switch {
     margin-top: 2rem;
   }
   span.lever {
     margin-bottom: 15px;
+  }
+  body.dark & {
+    background-color: $navbar-bg-color-dark;
+    a {
+      color: $font-color-light;
+      i {
+        color: $icon-color-light;
+      }
+    }
   }
 }
 .switch {
@@ -67,25 +86,6 @@ nav {
     }
     input + span.lever {
       background-color: color("blue-grey", "darken-2");
-    }
-  }
-}
-.sidenav {
-  li a {
-    &:hover {
-      background-color: $link-color-hover-light;
-    }
-    i.material-icons {
-      color: $icon-color;
-    }
-  }
-  body.dark & {
-    background-color: $navbar-bg-color-dark;
-    a {
-      color: $font-color-light;
-      i {
-        color: $icon-color-light;
-      }
     }
   }
 }

@@ -36,6 +36,7 @@
     bottom: 0;
     border-style: solid;
     border-width: 0 25vw;
+    @include border-color-animation;
   }
   &::before {
     left: 0;

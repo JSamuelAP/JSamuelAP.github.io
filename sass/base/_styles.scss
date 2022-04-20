@@ -12,7 +12,10 @@ h6 {
 strong {
   font-weight: 700;
 }
-body.dark {
-  background-color: $bg-color-dark;
-  color: $font-color-light;
+body {
+  @include bg-animation;
+  &.dark {
+    background-color: $bg-color-dark;
+    color: $font-color-light;
+  }
 }

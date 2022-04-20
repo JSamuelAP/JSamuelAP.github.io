@@ -12,6 +12,12 @@
   }
 
   .card {
+    @include bg-animation;
+    .chip,
+    &-reveal,
+    &-action {
+      @include bg-animation;
+    }
     body.dark & {
       background-color: $card-bg-dark;
       box-shadow: none;

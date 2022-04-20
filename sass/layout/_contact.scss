@@ -1,5 +1,6 @@
 .contact {
   background-color: $contact-bg-color;
+  @include bg-animation;
   h2 {
     @media screen and (max-width: 992px) {
       text-align: center;
