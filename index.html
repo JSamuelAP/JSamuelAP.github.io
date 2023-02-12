@@ -1,444 +1,364 @@
 <!DOCTYPE html>
 <html lang="es">
-  <head>
-    <meta charset="UTF-8" />
-    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
-    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <!-- Favicons -->
-    <link
-      rel="apple-touch-icon"
-      sizes="57x57"
-      href="images/favicons/apple-icon-57x57.png"
-    />
-    <link
-      rel="apple-touch-icon"
-      sizes="60x60"
-      href="images/favicons/apple-icon-60x60.png"
-    />
-    <link
-      rel="apple-touch-icon"
-      sizes="72x72"
-      href="images/favicons/apple-icon-72x72.png"
-    />
-    <link
-      rel="apple-touch-icon"
-      sizes="76x76"
-      href="images/favicons/apple-icon-76x76.png"
-    />
-    <link
-      rel="apple-touch-icon"
-      sizes="114x114"
-      href="images/favicons/apple-icon-114x114.png"
-    />
-    <link
-      rel="apple-touch-icon"
-      sizes="120x120"
-      href="images/favicons/apple-icon-120x120.png"
-    />
-    <link
-      rel="apple-touch-icon"
-      sizes="144x144"
-      href="images/favicons/apple-icon-144x144.png"
-    />
-    <link
-      rel="apple-touch-icon"
-      sizes="152x152"
-      href="images/favicons/apple-icon-152x152.png"
-    />
-    <link
-      rel="apple-touch-icon"
-      sizes="180x180"
-      href="images/favicons/apple-icon-180x180.png"
-    />
-    <link
-      rel="icon"
-      type="image/png"
-      sizes="192x192"
-      href="images/favicons/android-icon-192x192.png"
-    />
-    <link
-      rel="icon"
-      type="image/png"
-      sizes="32x32"
-      href="images/favicons/favicon-32x32.png"
-    />
-    <link
-      rel="icon"
-      type="image/png"
-      sizes="96x96"
-      href="images/favicons/favicon-96x96.png"
-    />
-    <link
-      rel="icon"
-      type="image/png"
-      sizes="16x16"
-      href="images/favicons/favicon-16x16.png"
-    />
-    <link rel="manifest" href="images/favicons/manifest.json" />
-    <meta name="msapplication-TileColor" content="#ffffff" />
-    <meta
-      name="msapplication-TileImage"
-      content="images/favicons/ms-icon-144x144.png"
-    />
-    <meta name="theme-color" content="#ffffff" />
-    <title>JSamuel | Desarrollador Frontend</title>
-    <!-- Styles -->
-    <link rel="stylesheet" href="css/custom.min.css" />
-    <!-- Materialize icons -->
-    <link
-      href="https://fonts.googleapis.com/icon?family=Material+Icons"
-      rel="stylesheet"
-    />
-    <!-- Scrollreveal -->
-    <script src="js/scrollreveal.js"></script>
-  </head>
-  <body>
-    <header class="header" id="header">
-      <!-- Navbar -->
-      <div class="navbar-fixed">
-        <nav>
-          <div class="container nav-wrapper">
-            <a href="#" class="brand-logo">
-              <picture>
-                <source
-                  media="(max-width: 500px)"
-                  srcset="images/brand-logos/logo.svg"
-                />
-                <img
-                  src="images/brand-logos/logo-horizontal.svg"
-                  alt="Logo de JSamuel"
-                  id="navbar__logo"
-                />
-              </picture>
-            </a>
-            <a href="#" class="sidenav-trigger right" data-target="mobile-nav">
-              <i class="material-icons">menu</i>
-            </a>
-            <ul class="right hide-on-med-and-down">
-              <li>
-                <a href="#about" class="waves-effect waves-js">Sobre mí</a>
-              </li>
-              <li>
-                <a href="#skills" class="waves-effect waves-js">Tecnologías</a>
-              </li>
-              <li>
-                <a href="#proyects" class="waves-effect waves-js">Proyectos</a>
-              </li>
-              <li>
-                <a href="#contact" class="waves-effect waves-js">Contacto</a>
-              </li>
-              <li>
-                <div class="switch">
-                  <label>
-                    <i class="material-icons sun">brightness_5</i>
-                    <input type="checkbox" id="theme-switcher-desktop" />
-                    <span class="lever"></span>
-                    <i class="material-icons moon">brightness_2</i>
-                  </label>
-                </div>
-              </li>
-            </ul>
-          </div>
-        </nav>
-      </div>
-      <!-- Side navbar -->
-      <ul class="sidenav" id="mobile-nav">
-        <li>
-          <a href="#about" class="waves-effect waves-js">
-            <i class="material-icons">person</i>
-            Sobre mí
-          </a>
-        </li>
-        <li>
-          <a href="#skills" class="waves-effect waves-js">
-            <i class="material-icons">code</i>
-            Tecnologías
-          </a>
-        </li>
-        <li>
-          <a href="#proyects" class="waves-effect waves-js">
-            <i class="material-icons">web</i>
-            Proyectos
-          </a>
-        </li>
-        <li>
-          <a href="#contact" class="waves-effect waves-js">
-            <i class="material-icons">email</i>
-            Contacto
-          </a>
-        </li>
-        <div class="switch center-align">
-          <label>
-            <i class="material-icons sun">brightness_5</i>
-            <input type="checkbox" id="theme-switcher-mobile" />
-            <span class="lever"></span>
-            <i class="material-icons moon">brightness_2</i>
-          </label>
-        </div>
-      </ul>
-      <!-- Hero -->
-      <div class="container header__content">
-        <img
-          src="images/brand-logos/logo-vertical-white.svg"
-          alt="Logo blanco de JSamuel"
-        />
-        <h1 class="center-align white-text">Desarrollador Frontend</h1>
-      </div>
-    </header>
-    <main>
-      <div class="container">
-        <!-- About me -->
-        <section class="section about" id="about">
-          <h2 class="center-align">Sobre mí</h2>
-          <div class="row">
-            <div class="col s12 l9">
-              <p>
-                Mi nombre es
-                <strong>José Samuel Aldana Pérez</strong>, soy un joven mexicano
-                🇲🇽 apasionado por el mundo de la web, aún soy un novato, pero lo
-                disfruto porque estoy aprendiendo nuevas cosas que me permiten
-                crear lo que sea.
-              </p>
-              <p>
-                Actualmente curso la mitad de la carrera de ingeniería en
-                sistemas computacionales 👨‍💻. Por el momento no cuento con
-                experiencia laboral, así que he incluido algunos
-                <a href="#proyects">proyectos</a> que yo me he propuesto durante
-                los últimos dos años.
-              </p>
-            </div>
-            <div class="col s12 l3">
-              <picture>
-                <source
-                  media="(max-width: 992px)"
-                  srcset="images/brand-logos/logo-horizontal-black.svg"
-                />
-                <img
-                  src="images/brand-logos/logo-vertical-black.svg"
-                  class="about__img"
-                  alt="Mi logo"
-                />
-              </picture>
-            </div>
-          </div>
-        </section>
-        <!-- Skills -->
-        <section class="section skills" id="skills">
-          <h2 class="center-align">Tecnologías</h2>
-          <p>
-            Actualmente sigo estudiando <strong>JavaScript</strong>, para
-            después aprender <strong>NodeJS</strong> y <strong>ReactJS</strong>.
-            En cuanto a CSS sé trabajar con <strong>Flexbox</strong>,
-            <strong>CSS Grid</strong> y utilizo la metodología
-            <strong>BEM</strong>.
-          </p>
-          <div class="row">
-            <div class="col s6 l3">
-              <div class="card-panel center-align">
-                <img
-                  src="images/skills-logos/html-5.svg"
-                  class="skills__img html"
-                  alt="Logo de HTML 5"
-                  title="Lennguaje de marcado de hipertexto"
-                />
-                <h5 class="truncate">HTML 5</h5>
-              </div>
-            </div>
-            <div class="col s6 l3">
-              <div class="card-panel center-align">
-                <img
-                  src="images/skills-logos/css-3.svg"
-                  class="skills__img css"
-                  alt="Logo de CSS 3"
-                  title="Lenguaje de estilos"
-                />
-                <h5 class="truncate">CSS 3</h5>
-              </div>
-            </div>
-            <div class="col s6 l3">
-              <div class="card-panel center-align">
-                <img
-                  src="images/skills-logos/javascript.svg"
-                  class="skills__img javascript"
-                  alt="Logo de JavaScript"
-                  title="Lenguaje de programación"
-                />
-                <h5 class="truncate">JavaScript</h5>
-              </div>
-            </div>
-            <div class="col s6 l3">
-              <div class="card-panel center-align">
-                <img
-                  src="images/skills-logos/git-icon.svg"
-                  class="skills__img git"
-                  alt="Logo de Git"
-                  title="Sistema de control de versiones"
-                />
-                <h5 class="truncate">Git</h5>
-              </div>
-            </div>
-            <div class="col s6 l3">
-              <div class="card-panel center-align">
-                <img
-                  src="images/skills-logos/github-icon.svg"
-                  class="skills__img github"
-                  alt="Logo de GitHub"
-                  title="Servicio de repositorios de Git"
-                />
-                <h5 class="truncate">GitHub</h5>
-              </div>
-            </div>
-            <div class="col s6 l3">
-              <div class="card-panel center-align">
-                <img
-                  src="images/skills-logos/bootstrap.svg"
-                  class="skills__img bootstrap"
-                  alt="Logo de Bootstrap"
-                  title="Framework de CSS"
-                />
-                <h5 class="truncate">Bootstrap 5</h5>
-              </div>
-            </div>
-            <div class="col s6 l3">
-              <div class="card-panel center-align">
-                <img
-                  src="images/skills-logos/materializecss.svg"
-                  class="skills__img materialize"
-                  alt="Logo de Materialize CSS"
-                  title="Framework de CSS"
-                />
-                <h5 class="truncate">Materialize CSS</h5>
-              </div>
-            </div>
-            <div class="col s6 l3">
-              <div class="card-panel center-align">
-                <img
-                  src="images/skills-logos/sass.svg"
-                  class="skills__img materialize"
-                  alt="Logo de Sass"
-                  title="Preprocesador de CSS"
-                />
-                <h5 class="truncate">Sass</h5>
-              </div>
-            </div>
-          </div>
-        </section>
-        <!-- Proyects -->
-        <section class="section proyects" id="proyects">
-          <h2 class="center-align">Proyectos</h2>
-          <div class="proyects__grid"></div>
-        </section>
-      </div>
-      <!-- Contact -->
-      <section class="section contact" id="contact">
-        <div class="container">
-          <div class="row">
-            <div class="col s12 l8">
-              <h2 class="white-text">Contactame</h2>
-            </div>
-            <div class="col s3 l1">
-              <a
-                href="mailto:sp4619168@gmail.com"
-                target="_blank"
-                class="contact__link"
-              >
-                <img
-                  src="images/social-logos/email.svg"
-                  alt="Icono de email"
-                  class="contact__logo"
-                />
-              </a>
-            </div>
-            <div class="col s3 l1">
-              <a
-                href="https://twitter.com/JSamuelAP"
-                target="_blank"
-                class="contact__link"
-              >
-                <img
-                  src="images/social-logos/twitter.svg"
-                  alt="Logo de Twitter"
-                  class="contact__logo"
-                />
-              </a>
-            </div>
-            <div class="col s3 l1">
-              <a
-                href="https://www.linkedin.com/in/jsamuelap/"
-                target="_blank"
-                class="contact__link"
-              >
-                <img
-                  src="images/social-logos/linkedin.svg"
-                  alt="Logo de LinkeIn"
-                  class="contact__logo"
-                />
-              </a>
-            </div>
-            <div class="col s3 l1">
-              <a
-                href="https://github.com/JSamuelAP"
-                target="_blank"
-                class="contact__link"
-              >
-                <img
-                  src="images/social-logos/github.svg"
-                  alt="Logo de GitHub"
-                  class="contact__logo"
-                />
-              </a>
-            </div>
-          </div>
-        </div>
-      </section>
-    </main>
-    <!-- Footer -->
-    <footer class="page-footer">
-      <div class="container center-align">
-        <div class="section">
-          &copy; 2022
-          <strong>JSamuel</strong>
-        </div>
-      </div>
-    </footer>
-    <!-- Plantillas -->
-    <template id="card">
-      <article class="card sticky-action hoverable">
-        <div class="card-image waves-effect waves-block waves-light">
-          <img class="activator" src="" alt="Captura del proyecto" />
-        </div>
-        <div class="card-content">
-          <span class="card-title activator"></span>
-          <p class="card__chips"></p>
-        </div>
-        <div class="card-action">
-          <a
-            href=""
-            target="_blank"
-            class="card__btn--live waves-effect waves-light btn-small"
-          >
-            <i class="material-icons left">search</i>
-            Vivo
-          </a>
-          <a
-            href=""
-            target="_blank"
-            class="card__btn--code waves-effect waves-light btn-small"
-          >
-            <i class="material-icons left">code</i>
-            Código
-          </a>
-        </div>
-        <div class="card-reveal">
-          <span class="card-title"></span>
-          <p class="card-description"></p>
-        </div>
-      </article>
-    </template>
-    <!-- Materialize -->
-    <script src="js/materialize.min.js"></script>
-    <script src="js/proyectos.js"></script>
-    <script src="js/funciones.js"></script>
-    <script src="js/app.js"></script>
-  </body>
+	<head>
+		<meta charset="UTF-8" />
+		<meta http-equiv="X-UA-Compatible" content="IE=edge" />
+		<meta name="viewport" content="width=device-width, initial-scale=1.0" />
+		<!-- Favicons -->
+		<link
+			rel="apple-touch-icon"
+			sizes="57x57"
+			href="images/favicons/apple-icon-57x57.png"
+		/>
+		<link
+			rel="apple-touch-icon"
+			sizes="60x60"
+			href="images/favicons/apple-icon-60x60.png"
+		/>
+		<link
+			rel="apple-touch-icon"
+			sizes="72x72"
+			href="images/favicons/apple-icon-72x72.png"
+		/>
+		<link
+			rel="apple-touch-icon"
+			sizes="76x76"
+			href="images/favicons/apple-icon-76x76.png"
+		/>
+		<link
+			rel="apple-touch-icon"
+			sizes="114x114"
+			href="images/favicons/apple-icon-114x114.png"
+		/>
+		<link
+			rel="apple-touch-icon"
+			sizes="120x120"
+			href="images/favicons/apple-icon-120x120.png"
+		/>
+		<link
+			rel="apple-touch-icon"
+			sizes="144x144"
+			href="images/favicons/apple-icon-144x144.png"
+		/>
+		<link
+			rel="apple-touch-icon"
+			sizes="152x152"
+			href="images/favicons/apple-icon-152x152.png"
+		/>
+		<link
+			rel="apple-touch-icon"
+			sizes="180x180"
+			href="images/favicons/apple-icon-180x180.png"
+		/>
+		<link
+			rel="icon"
+			type="image/png"
+			sizes="192x192"
+			href="images/favicons/android-icon-192x192.png"
+		/>
+		<link
+			rel="icon"
+			type="image/png"
+			sizes="32x32"
+			href="images/favicons/favicon-32x32.png"
+		/>
+		<link
+			rel="icon"
+			type="image/png"
+			sizes="96x96"
+			href="images/favicons/favicon-96x96.png"
+		/>
+		<link
+			rel="icon"
+			type="image/png"
+			sizes="16x16"
+			href="images/favicons/favicon-16x16.png"
+		/>
+		<link rel="manifest" href="images/favicons/manifest.json" />
+		<meta name="msapplication-TileColor" content="#ffffff" />
+		<meta
+			name="msapplication-TileImage"
+			content="images/favicons/ms-icon-144x144.png"
+		/>
+		<meta name="theme-color" content="#ffffff" />
+		<title>JSamuel | Desarrollador Frontend</title>
+		<!-- Styles -->
+		<link rel="stylesheet" href="css/custom.min.css" />
+		<!-- Materialize icons -->
+		<link
+			href="https://fonts.googleapis.com/icon?family=Material+Icons"
+			rel="stylesheet"
+		/>
+		<!-- Scrollreveal -->
+		<script src="js/scrollreveal.js"></script>
+	</head>
+	<body>
+		<header class="header" id="header">
+			<!-- Navbar -->
+			<div class="navbar-fixed">
+				<nav>
+					<div class="container nav-wrapper">
+						<a href="#" class="brand-logo">
+							<picture>
+								<source
+									media="(max-width: 500px)"
+									srcset="images/brand-logos/logo.svg"
+								/>
+								<img
+									src="images/brand-logos/logo-horizontal.svg"
+									alt="Logo de JSamuel"
+									id="navbar__logo"
+								/>
+							</picture>
+						</a>
+						<a href="#" class="sidenav-trigger right" data-target="mobile-nav">
+							<i class="material-icons">menu</i>
+						</a>
+						<ul class="right hide-on-med-and-down">
+							<li>
+								<a href="#about" class="waves-effect waves-js">Sobre mí</a>
+							</li>
+							<li>
+								<a href="#skills" class="waves-effect waves-js">Tecnologías</a>
+							</li>
+							<li>
+								<a href="#proyects" class="waves-effect waves-js">Proyectos</a>
+							</li>
+							<li>
+								<a href="#contact" class="waves-effect waves-js">Contacto</a>
+							</li>
+							<li>
+								<div class="switch">
+									<label>
+										<i class="material-icons sun">brightness_5</i>
+										<input type="checkbox" id="theme-switcher-desktop" />
+										<span class="lever"></span>
+										<i class="material-icons moon">brightness_2</i>
+									</label>
+								</div>
+							</li>
+						</ul>
+					</div>
+				</nav>
+			</div>
+			<!-- Side navbar -->
+			<ul class="sidenav" id="mobile-nav">
+				<li>
+					<a href="#about" class="waves-effect waves-js">
+						<i class="material-icons">person</i>
+						Sobre mí
+					</a>
+				</li>
+				<li>
+					<a href="#skills" class="waves-effect waves-js">
+						<i class="material-icons">code</i>
+						Tecnologías
+					</a>
+				</li>
+				<li>
+					<a href="#proyects" class="waves-effect waves-js">
+						<i class="material-icons">web</i>
+						Proyectos
+					</a>
+				</li>
+				<li>
+					<a href="#contact" class="waves-effect waves-js">
+						<i class="material-icons">email</i>
+						Contacto
+					</a>
+				</li>
+				<div class="switch center-align">
+					<label>
+						<i class="material-icons sun">brightness_5</i>
+						<input type="checkbox" id="theme-switcher-mobile" />
+						<span class="lever"></span>
+						<i class="material-icons moon">brightness_2</i>
+					</label>
+				</div>
+			</ul>
+			<!-- Hero -->
+			<div class="container header__content">
+				<img
+					src="images/brand-logos/logo-vertical-white.svg"
+					alt="Logo blanco de JSamuel"
+				/>
+				<h1 class="center-align white-text">Desarrollador Frontend</h1>
+			</div>
+		</header>
+		<main>
+			<div class="container">
+				<!-- About me -->
+				<section class="section about" id="about">
+					<h2 class="center-align">Sobre mí</h2>
+					<div class="row">
+						<div class="col s12 l9">
+							<p>
+								Mi nombre es
+								<strong>José Samuel Aldana Pérez</strong>, soy un joven mexicano
+								🇲🇽 apasionado por el mundo de la web, aún soy un novato, pero lo
+								disfruto porque estoy aprendiendo nuevas cosas que me permiten
+								crear lo que sea.
+							</p>
+							<p>
+								Actualmente curso la mitad de la carrera de ingeniería en
+								sistemas computacionales 👨‍💻. Por el momento no cuento con
+								experiencia laboral, así que he incluido algunos
+								<a href="#proyects">proyectos</a> que yo me he propuesto durante
+								los últimos dos años.
+							</p>
+						</div>
+						<div class="col s12 l3">
+							<picture>
+								<source
+									media="(max-width: 992px)"
+									srcset="images/brand-logos/logo-horizontal-black.svg"
+								/>
+								<img
+									src="images/brand-logos/logo-vertical-black.svg"
+									class="about__img"
+									alt="Mi logo"
+								/>
+							</picture>
+						</div>
+					</div>
+				</section>
+				<!-- Skills -->
+				<section class="section skills" id="skills">
+					<h2 class="center-align">Tecnologías</h2>
+					<p>
+						Actualmente sigo estudiando <strong>JavaScript</strong>, para
+						después aprender <strong>NodeJS</strong> y <strong>ReactJS</strong>.
+						En cuanto a CSS sé trabajar con <strong>Flexbox</strong>,
+						<strong>CSS Grid</strong> y utilizo la metodología
+						<strong>BEM</strong>.
+					</p>
+					<div class="skills__grid row"></div>
+				</section>
+				<!-- Proyects -->
+				<section class="section proyects" id="proyects">
+					<h2 class="center-align">Proyectos</h2>
+					<div class="proyects__grid"></div>
+				</section>
+			</div>
+			<!-- Contact -->
+			<section class="section contact" id="contact">
+				<div class="container">
+					<div class="row">
+						<div class="col s12 l8">
+							<h2 class="white-text">Contactame</h2>
+						</div>
+						<div class="col s3 l1">
+							<a
+								href="mailto:sp4619168@gmail.com"
+								target="_blank"
+								class="contact__link"
+							>
+								<img
+									src="images/social-logos/email.svg"
+									alt="Icono de email"
+									class="contact__logo"
+								/>
+							</a>
+						</div>
+						<div class="col s3 l1">
+							<a
+								href="https://twitter.com/JSamuelAP"
+								target="_blank"
+								class="contact__link"
+							>
+								<img
+									src="images/social-logos/twitter.svg"
+									alt="Logo de Twitter"
+									class="contact__logo"
+								/>
+							</a>
+						</div>
+						<div class="col s3 l1">
+							<a
+								href="https://www.linkedin.com/in/jsamuelap/"
+								target="_blank"
+								class="contact__link"
+							>
+								<img
+									src="images/social-logos/linkedin.svg"
+									alt="Logo de LinkeIn"
+									class="contact__logo"
+								/>
+							</a>
+						</div>
+						<div class="col s3 l1">
+							<a
+								href="https://github.com/JSamuelAP"
+								target="_blank"
+								class="contact__link"
+							>
+								<img
+									src="images/social-logos/github.svg"
+									alt="Logo de GitHub"
+									class="contact__logo"
+								/>
+							</a>
+						</div>
+					</div>
+				</div>
+			</section>
+		</main>
+		<!-- Footer -->
+		<footer class="page-footer">
+			<div class="container center-align">
+				<div class="section">
+					&copy; 2022
+					<strong>JSamuel</strong>
+				</div>
+			</div>
+		</footer>
+		<!-- Plantillas -->
+		<template id="skill-card">
+			<div class="skill-card col s6 l3">
+				<div class="card-panel center-align">
+					<img src="" class="skills__img" alt="" title="" />
+					<h5 class="truncate"></h5>
+				</div>
+			</div>
+		</template>
+		<template id="card">
+			<article class="card sticky-action hoverable">
+				<div class="card-image waves-effect waves-block waves-light">
+					<img class="activator" src="" alt="Captura del proyecto" />
+				</div>
+				<div class="card-content">
+					<span class="card-title activator"></span>
+					<p class="card__chips"></p>
+				</div>
+				<div class="card-action">
+					<a
+						href=""
+						target="_blank"
+						class="card__btn--live waves-effect waves-light btn-small"
+					>
+						<i class="material-icons left">search</i>
+						Vivo
+					</a>
+					<a
+						href=""
+						target="_blank"
+						class="card__btn--code waves-effect waves-light btn-small"
+					>
+						<i class="material-icons left">code</i>
+						Código
+					</a>
+				</div>
+				<div class="card-reveal">
+					<span class="card-title"></span>
+					<p class="card-description"></p>
+				</div>
+			</article>
+		</template>
+		<!-- Materialize -->
+		<script src="js/materialize.min.js"></script>
+		<script src="js/tecnologias.js"></script>
+		<script src="js/proyectos.js"></script>
+		<script src="js/funciones.js"></script>
+		<script src="js/app.js"></script>
+	</body>
 </html>

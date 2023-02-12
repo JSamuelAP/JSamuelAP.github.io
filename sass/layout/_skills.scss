@@ -1,13 +1,13 @@
 .skills {
-  &__img {
-    width: 6.5rem;
-    height: 6.5rem;
-  }
-  .card-panel {
-  @include bg-animation;
-    body.dark & {
-      background-color: $card-bg-dark;
-      box-shadow: none;
-    }
-  }
+	&__img {
+		width: 5.5rem;
+		height: 5.5rem;
+	}
+	.card-panel {
+		@include bg-animation;
+		body.dark & {
+			background-color: $card-bg-dark;
+			box-shadow: none;
+		}
+	}
 }
