@@ -1,62 +1,62 @@
 const tecnologias = [
 	{
 		name: "HTML 5",
-		logo: "html-5.svg",
+		logo: "html-5",
 		title: "Lenguaje de marcado de hipertexto",
 	},
 	{
 		name: "CSS 3",
-		logo: "css-3.svg",
+		logo: "css-3",
 		title: "Lenguaje de estilos en cascada",
 	},
 	{
 		name: "JavaScript",
-		logo: "javascript.svg",
+		logo: "javascript",
 		title: "Lenguaje de programación",
 	},
 	{
 		name: "React",
-		logo: "react.svg",
+		logo: "react",
 		title: "Librería de JavaScript",
 	},
 	{
 		name: "Bootstrap 5",
-		logo: "bootstrap.svg",
+		logo: "bootstrap",
 		title: "Framework de CSS",
 	},
 	{
 		name: "Tailwind CSS",
-		logo: "tailwindcss.svg",
+		logo: "tailwindcss",
 		title: "Framework de CSS",
 	},
 	{
 		name: "Materialize CSS",
-		logo: "materializecss.svg",
+		logo: "materializecss",
 		title: "Framework de CSS",
 	},
 	{
 		name: "Sass",
-		logo: "sass.svg",
+		logo: "sass",
 		title: "Preprocesador CSS",
 	},
 	{
 		name: "Git",
-		logo: "git.svg",
+		logo: "git",
 		title: "Sistema de control de versiones",
 	},
 	{
 		name: "Github",
-		logo: "github.svg",
+		logo: "github",
 		title: "Servicios de repositorios de git",
 	},
 	{
 		name: "Figma",
-		logo: "figma.svg",
+		logo: "figma",
 		title: "Software de diseño",
 	},
 	{
 		name: "SQL Server",
-		logo: "sql-server.svg",
+		logo: "sql-server",
 		title: "Sistema Gestor de Bases de Datos",
 	},
 ];

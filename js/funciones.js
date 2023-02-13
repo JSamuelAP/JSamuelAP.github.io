@@ -4,10 +4,10 @@ function iniciarApp() {
 	// Materialize CSS
 	M.AutoInit();
 
-	cargarTema();
 	imprimirTecnologiasUI();
 	imprimirProyectosUI();
 	configurarAnimaciones();
+	cargarTema();
 }
 
 function configurarAnimaciones() {
@@ -52,10 +52,10 @@ function imprimirTecnologiasUI() {
 		// Logo
 		cloneSkillCard
 			.querySelector("img")
-			.setAttribute("src", `images/skills-logos/${logo}`);
+			.setAttribute("src", `images/skills-logos/${logo}.svg`);
 		cloneSkillCard.querySelector("img").setAttribute("alt", `Logo de ${name}`);
 		cloneSkillCard.querySelector("img").setAttribute("title", title);
-
+		cloneSkillCard.querySelector("img").classList.add(logo);
 		// Heading
 		cloneSkillCard.querySelector("h5").textContent = name;
 
@@ -146,7 +146,7 @@ function cargarTema() {
 			themeSwitcherSidenav.checked = false;
 			body.classList.remove("dark");
 		}
-		// cambiarImagenes();
+		cambiarImagenes();
 		guardarTema();
 	}
 
@@ -155,9 +155,10 @@ function cargarTema() {
 		const logoSource = logo.previousElementSibling;
 		const logoAbout = document.querySelector(".about__img");
 		const logoAboutSource = logoAbout.previousElementSibling;
-		const logoHTML = document.querySelector(".skills__img.html");
-		const logoCSS = document.querySelector(".skills__img.css");
+		const logoHTML = document.querySelector(".skills__img.html-5");
+		const logoCSS = document.querySelector(".skills__img.css-3");
 		const logoGitHub = document.querySelector(".skills__img.github");
+		const logoSQLServer = document.querySelector(".skills__img.sql-server");
 
 		if (tema === "dark") {
 			logo.src = "images/brand-logos/logo-horizontal-white.svg";
@@ -167,6 +168,7 @@ function cargarTema() {
 			logoHTML.src = "images/skills-logos/html-5-white.svg";
 			logoCSS.src = "images/skills-logos/css-3-white.svg";
 			logoGitHub.src = "images/skills-logos/github-white.svg";
+			logoSQLServer.src = "images/skills-logos/sql-server-white.svg";
 		} else {
 			logo.src = "images/brand-logos/logo-horizontal.svg";
 			logoSource.srcset = "images/brand-logos/logo.svg";
@@ -175,6 +177,7 @@ function cargarTema() {
 			logoHTML.src = "images/skills-logos/html-5.svg";
 			logoCSS.src = "images/skills-logos/css-3.svg";
 			logoGitHub.src = "images/skills-logos/github.svg";
+			logoSQLServer.src = "images/skills-logos/sql-server.svg";
 		}
 	}
 
