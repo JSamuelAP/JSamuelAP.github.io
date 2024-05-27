@@ -1,30 +1,30 @@
 {
-  "dependencies": {
-    "materialize-css": "^1.0.0-rc.2"
-  },
-  "name": "portafolio",
-  "version": "2.0.0",
-  "main": "index.js",
-  "scripts": {
-    "test": "echo \"Error: no test specified\" && exit 1"
-  },
-  "repository": {
-    "type": "git",
-    "url": "git+https://github.com/JSamuelAP/JSamuelAP.github.io.git"
-  },
-  "keywords": [
-    "javscript",
-    "html",
-    "sass",
-    "portfolio",
-    "materialize-css",
-    "scrollreveal-js"
-  ],
-  "author": "JSamuel",
-  "license": "ISC",
-  "bugs": {
-    "url": "https://github.com/JSamuelAP/JSamuelAP.github.io/issues"
-  },
-  "homepage": "https://github.com/JSamuelAP/JSamuelAP.github.io#readme",
-  "description": "Mi proyecto para demostrar mis habilidades y darme a conocer como desarrollador web"
+	"name": "portafolio-jsamuel",
+	"description": "Mi proyecto para demostrar mis habilidades y darme a conocer como desarrollador web",
+	"homepage": "https://github.com/JSamuelAP/JSamuelAP.github.io#readme",
+	"author": "JSamuel",
+	"version": "2.1.0",
+	"main": "index.js",
+	"license": "ISC",
+	"scripts": {
+		"test": "echo \"Error: no test specified\" && exit 1"
+	},
+	"repository": {
+		"type": "git",
+		"url": "git+https://github.com/JSamuelAP/JSamuelAP.github.io.git"
+	},
+	"keywords": [
+		"javscript",
+		"html",
+		"sass",
+		"portfolio",
+		"materialize-css",
+		"scrollreveal-js"
+	],
+	"bugs": {
+		"url": "https://github.com/JSamuelAP/JSamuelAP.github.io/issues"
+	},
+	"dependencies": {
+		"materialize-css": "^1.0.0-rc.2"
+	}
 }
