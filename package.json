@@ -3,12 +3,10 @@
 	"description": "Mi proyecto para demostrar mis habilidades y darme a conocer como desarrollador web",
 	"homepage": "https://github.com/JSamuelAP/JSamuelAP.github.io#readme",
 	"author": "JSamuel",
-	"version": "2.1.0",
-	"main": "index.js",
+	"version": "2.2.0",
+	"main": "js/app.js",
 	"license": "ISC",
-	"scripts": {
-		"test": "echo \"Error: no test specified\" && exit 1"
-	},
+	"scripts": {},
 	"repository": {
 		"type": "git",
 		"url": "git+https://github.com/JSamuelAP/JSamuelAP.github.io.git"
