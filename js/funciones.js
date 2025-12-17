@@ -156,6 +156,7 @@ function cargarTema() {
 		const logoAbout = document.querySelector(".about__img");
 		const logoAboutSource = logoAbout.previousElementSibling;
 		const logoExpress = document.querySelector(".skills__img.express");
+		const logoSQLServer = document.querySelector(".skills__img.sql-server");
 
 		if (tema === "dark") {
 			logo.src = "images/brand-logos/logo-horizontal-white.svg";
@@ -163,12 +164,14 @@ function cargarTema() {
 			logoAbout.src = "images/brand-logos/logo-vertical-white.svg";
 			logoAboutSource.srcset = "images/brand-logos/logo-horizontal-white.svg";
 			logoExpress.src = "images/skills-logos/express-white.svg";
+			logoSQLServer.src = "images/skills-logos/sql-server-white.svg";
 		} else {
 			logo.src = "images/brand-logos/logo-horizontal.svg";
 			logoSource.srcset = "images/brand-logos/logo.svg";
 			logoAbout.src = "images/brand-logos/logo-vertical-black.svg";
 			logoAboutSource.srcset = "images/brand-logos/logo-horizontal-black.svg";
 			logoExpress.src = "images/skills-logos/express.svg";
+			logoSQLServer.src = "images/skills-logos/sql-server.svg";
 		}
 	}
 

@@ -1,8 +1,13 @@
 const tecnologias = [
 	{
-		name: "JavaScript",
-		logo: "javascript",
+		name: "TypeScript",
+		logo: "typescript",
 		title: "Lenguaje de programación",
+	},
+	{
+		name: "Angular",
+		logo: "angular",
+		title: "Framework para aplicaciones web",
 	},
 	{
 		name: "NodeJS",
@@ -15,9 +20,14 @@ const tecnologias = [
 		title: "Framework para NodeJS",
 	},
 	{
-		name: "React",
-		logo: "react",
-		title: "Librería de JavaScript",
+		name: "Java",
+		logo: "java",
+		title: "Lenguaje de programación",
+	},
+	{
+		name: "Spring Boot",
+		logo: "spring-boot",
+		title: "Framework para aplicaciones Java",
 	},
 	{
 		name: "Git",
@@ -35,24 +45,14 @@ const tecnologias = [
 		title: "Sistema Gestor de Bases de Datos",
 	},
 	{
-		name: "Material UI",
-		logo: "material-ui",
-		title: "Librería de componentes para React",
-	},
-	{
-		name: "Bootstrap 5",
-		logo: "bootstrap",
-		title: "Framework de CSS",
-	},
-	{
 		name: "Tailwind CSS",
 		logo: "tailwindcss",
 		title: "Framework de CSS",
 	},
 	{
-		name: "Sass",
-		logo: "sass",
-		title: "Preprocesador CSS",
+		name: "Linux",
+		logo: "linux",
+		title: "Sistema Operativo",
 	},
 	{
 		name: "Figma",
