@@ -1,7 +1,7 @@
 const proyectos = [
 	{
 		name: "Innovatube",
-		imgURL: "images/miniatures/miniature-proyect-6.jpg",
+		imgURL: "images/miniatures/miniature-project-6.jpg",
 		tags: ["Angular", "Express", "Supabase"],
 		liveURL: "https://innovatube-jsamuelap.netlify.app",
 		codeURL: "https://github.com/JSamuelAP/innovatube",
@@ -10,7 +10,7 @@ const proyectos = [
 	},
 	{
 		name: "Capysoft",
-		imgURL: "images/miniatures/miniature-proyect-4.jpg",
+		imgURL: "images/miniatures/miniature-project-4.jpg",
 		tags: ["Angular", "Spring Boot", "MySQL"],
 		liveURL: "https://github.com/JSamuelAP/capysoft",
 		codeURL: "https://github.com/JSamuelAP/capysoft",
@@ -19,7 +19,7 @@ const proyectos = [
 	},
 	{
 		name: "CopyTickets",
-		imgURL: "images/miniatures/miniature-proyect-1.jpg",
+		imgURL: "images/miniatures/miniature-project-1.jpg",
 		tags: ["PHP", "MySQL", "Android"],
 		liveURL: "https://github.com/JSamuelAP/copytickets",
 		codeURL: "https://github.com/JSamuelAP/copytickets",
@@ -28,7 +28,7 @@ const proyectos = [
 	},
 	{
 		name: "DinoKanban",
-		imgURL: "images/miniatures/miniature-proyect-2.jpg",
+		imgURL: "images/miniatures/miniature-project-2.jpg",
 		tags: ["React", "Node", "MongoDB"],
 		liveURL: "https://jsamuelap.github.io/DinoKanban-APP/",
 		codeURL: "https://github.com/JSamuelAP/DinoKanban-APP",
@@ -37,17 +37,17 @@ const proyectos = [
 	},
 	{
 		name: "FarePassage App",
-		imgURL: "images/miniatures/miniature-proyect-3.jpg",
+		imgURL: "images/miniatures/miniature-project-3.jpg",
 		tags: ["React", "Tailwind", "Firebase"],
 		liveURL: "https://farepassage-app.web.app",
 		codeURL: "https://github.com/JSamuelAP/farepassage-app",
 		description:
-			"Aplicación Web Progresiva para llevar el seguimiento del saldo de taretas de pasajes del transporte público 🚍",
+			"Aplicación Web Progresiva para llevar el seguimiento del saldo de tarjetas de pasajes del transporte público 🚍",
 	},
 
 	{
 		name: "Catar 2022",
-		imgURL: "images/miniatures/miniature-proyect-5.jpg",
+		imgURL: "images/miniatures/miniature-project-5.jpg",
 		tags: ["JS", "Bootstrap"],
 		liveURL: "https://jsamuelap.github.io/sorteo-catar2022",
 		codeURL: "https://github.com/JSamuelAP/sorteo-catar2022",

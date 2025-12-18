@@ -3,7 +3,7 @@
 	"description": "Mi proyecto para demostrar mis habilidades y darme a conocer como desarrollador web",
 	"homepage": "https://github.com/JSamuelAP/JSamuelAP.github.io#readme",
 	"author": "JSamuel",
-	"version": "2.2.0",
+	"version": "2.3.0",
 	"main": "js/app.js",
 	"license": "ISC",
 	"scripts": {},
@@ -12,7 +12,7 @@
 		"url": "git+https://github.com/JSamuelAP/JSamuelAP.github.io.git"
 	},
 	"keywords": [
-		"javscript",
+		"javascript",
 		"html",
 		"sass",
 		"portfolio",

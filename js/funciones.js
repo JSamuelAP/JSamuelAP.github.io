@@ -67,8 +67,8 @@ function imprimirTecnologiasUI() {
 }
 
 function imprimirProyectosUI() {
-	const proyectsSection = document.querySelector("#proyects .proyects__grid");
-	const proyectsFragment = document.createDocumentFragment();
+	const projectsSection = document.querySelector("#projects .projects__grid");
+	const projectsFragment = document.createDocumentFragment();
 
 	proyectos.forEach((proyecto) => {
 		const cardTemplate = document.querySelector("#card");
@@ -94,19 +94,19 @@ function imprimirProyectosUI() {
 		cloneCard.querySelector(".card__btn--live").setAttribute("href", liveURL);
 		cloneCard.querySelector(".card__btn--code").setAttribute("href", codeURL);
 
-		// Titulo de la descripcion
+		// Titulo de la descripción
 		cloneCard.querySelector(
 			".card-reveal .card-title"
 		).innerHTML = `${name}  <i class="material-icons right">close</i>`;
 
-		// Descripcion
+		// Descripción
 		cloneCard.querySelector(".card-description").textContent = description;
 
-		proyectsFragment.appendChild(cloneCard);
+		projectsFragment.appendChild(cloneCard);
 	});
 
-	proyectsSection.textContent = "";
-	proyectsSection.appendChild(proyectsFragment);
+	projectsSection.textContent = "";
+	projectsSection.appendChild(projectsFragment);
 }
 
 function cargarTema() {

@@ -2,7 +2,7 @@
 
 Mi proyecto para demostrar mis habilidades y darme a conocer como desarrollador web.
 
-## Este portafolio fue hecho con:
+## Este portafolio fue hecho con
 
 - HTML
 - Materialize CSS
@@ -12,17 +12,17 @@ Mi proyecto para demostrar mis habilidades y darme a conocer como desarrollador 
 - Node js
   - npm
 
-## Características:
+## Características
 
 - Responsivo
 - Personalizado a mi marca personal
 - Temas claro y oscuro
   - Reconocimiento del tema del navegador
-  - Almacenamineto del tema en localstorage
+  - Almacenamiento del tema en localstorage
 - Dinámico con Javascript
 - Animaciones
 
-## Qué incluye:
+## Qué incluye
 
 - Descripción sobre mí y lo que hago
 - Tecnologías que conozco y que me gustaría aprender
