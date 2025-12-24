@@ -10,7 +10,7 @@
     "node": ">=22.12"
   },
   "scripts": {
-    "dev": "astro dev",
+    "dev": "astro dev --host",
     "build": "astro build",
     "preview": "astro preview",
     "astro": "astro",
@@ -22,14 +22,17 @@
     "prepare": "husky"
   },
   "dependencies": {
+    "@iconify-json/tabler": "^1.2.25",
     "@tailwindcss/vite": "^4.1.18",
     "astro": "^5.16.6",
+    "astro-icon": "^1.1.5",
     "daisyui": "^5.5.14",
     "tailwindcss": "^4.1.18"
   },
   "devDependencies": {
     "@commitlint/cli": "^20.2.0",
     "@commitlint/config-conventional": "^20.2.0",
+    "@typescript-eslint/eslint-plugin": "^8.50.1",
     "@typescript-eslint/parser": "^8.50.1",
     "eslint": "^9.39.2",
     "eslint-plugin-astro": "^1.5.0",

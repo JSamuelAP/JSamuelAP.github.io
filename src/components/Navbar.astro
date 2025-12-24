@@ -1,0 +1,22 @@
+---
+import { navigationItems } from '../config/navigation';
+---
+
+<nav class="navbar bg-base-100 hidden sm:flex">
+  <div class="flex-1">
+    <a href="/" class="cursor-pointer text-xl">JSamuel</a>
+  </div>
+  <div class="flex-none">
+    <ul class="menu menu-horizontal px-1">
+      {
+        navigationItems
+          .filter(item => item.href !== '/')
+          .map(item => (
+            <li>
+              <a href={item.href}>{item.label}</a>
+            </li>
+          ))
+      }
+    </ul>
+  </div>
+</nav>

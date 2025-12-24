@@ -1,0 +1,16 @@
+---
+import { Icon } from 'astro-icon/components';
+
+import { navigationItems } from '../config/navigation';
+---
+
+<div class="dock dock-xl sm:hidden">
+  {
+    navigationItems.map(item => (
+      <a href={item.href}>
+        <Icon name={`tabler:${item.icon}`} class="size-[1.2em]" />
+        <span class="dock-label">{item.label}</span>
+      </a>
+    ))
+  }
+</div>
