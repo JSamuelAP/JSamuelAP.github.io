@@ -1,0 +1,31 @@
+# Dependencias
+node_modules
+
+# Build / output
+dist
+.astro
+.output
+.vercel
+.netlify
+
+# Cachés
+.cache
+.parcel-cache
+.turbo
+.eslintcache
+
+# Archivos generados
+coverage
+*.log
+
+# Lockfiles (opcional)
+package-lock.json
+pnpm-lock.yaml
+yarn.lock
+
+# Configuración del editor
+.vscode
+.idea
+
+# Archivos estáticos grandes
+public/

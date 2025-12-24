@@ -1,28 +1,42 @@
 {
-	"name": "portafolio-jsamuel",
-	"description": "Mi proyecto para demostrar mis habilidades y darme a conocer como desarrollador web",
-	"homepage": "https://github.com/JSamuelAP/JSamuelAP.github.io#readme",
-	"author": "JSamuel",
-	"version": "2.3.0",
-	"main": "js/app.js",
-	"license": "ISC",
-	"scripts": {},
-	"repository": {
-		"type": "git",
-		"url": "git+https://github.com/JSamuelAP/JSamuelAP.github.io.git"
-	},
-	"keywords": [
-		"javascript",
-		"html",
-		"sass",
-		"portfolio",
-		"materialize-css",
-		"scrollreveal-js"
-	],
-	"bugs": {
-		"url": "https://github.com/JSamuelAP/JSamuelAP.github.io/issues"
-	},
-	"dependencies": {
-		"materialize-css": "^1.0.0-rc.2"
-	}
+  "name": "jsamuelap-github-io",
+  "private": true,
+  "type": "module",
+  "version": "3.0.0",
+  "author": "JSamuel",
+  "description": "Portafolio de desarrollador de JSamuel",
+  "homepage": "https://jsamuelap.github.io/",
+  "engines": {
+    "node": ">=22.12"
+  },
+  "scripts": {
+    "dev": "astro dev",
+    "build": "astro build",
+    "preview": "astro preview",
+    "astro": "astro",
+    "check": "astro check",
+    "lint": "eslint \"src/**/*.{js,ts,astro}\"",
+    "lint:fix": "eslint \"src/**/*.{js,ts,astro}\" --fix",
+    "format": "prettier --write --ignore-unknown .",
+    "format:check": "prettier --check --ignore-unknown .",
+    "prepare": "husky"
+  },
+  "dependencies": {
+    "@tailwindcss/vite": "^4.1.18",
+    "astro": "^5.16.6",
+    "daisyui": "^5.5.14",
+    "tailwindcss": "^4.1.18"
+  },
+  "devDependencies": {
+    "@commitlint/cli": "^20.2.0",
+    "@commitlint/config-conventional": "^20.2.0",
+    "@typescript-eslint/parser": "^8.50.1",
+    "eslint": "^9.39.2",
+    "eslint-plugin-astro": "^1.5.0",
+    "husky": "^9.1.7",
+    "lint-staged": "^16.2.7",
+    "prettier": "3.7.4",
+    "prettier-plugin-astro": "0.14.1",
+    "prettier-plugin-tailwindcss": "^0.7.2"
+  }
 }
