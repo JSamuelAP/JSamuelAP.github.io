@@ -1,0 +1,20 @@
+---
+import { Image } from 'astro:assets';
+import type { Skill } from '../config/skills';
+
+const { skill } = Astro.props;
+
+export interface Props {
+  skill: Skill;
+}
+---
+
+<div class="inline-flex items-center gap-2">
+  <Image
+    src={skill.src}
+    alt={`Logo de ${skill.name}`}
+    class="h-8 w-8 shrink-0 object-contain"
+    title={skill.description}
+  />
+  <span>{skill.name}</span>
+</div>
