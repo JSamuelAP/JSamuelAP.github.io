@@ -1,0 +1,41 @@
+---
+import { Icon } from 'astro-icon/components';
+
+import { educationHistory } from '../config/education';
+---
+
+<h2 class="mb-4 text-2xl font-bold">Educación</h2>
+<ul class="timeline timeline-snap-icon timeline-compact timeline-vertical">
+  {
+    educationHistory.map(education => (
+      <li>
+        <hr />
+        <div class="timeline-middle">
+          <Icon name={education.current ? 'tabler:book-2' : 'tabler:school'} class="h-5 w-5" />
+        </div>
+        <div class="timeline-end md:mb-10">
+          <div class="text-lg font-semibold">{education.title}</div>
+          <p>
+            <Icon name="tabler:building" class="mr-1 inline h-4 w-4" />
+            {education.institution}
+          </p>
+          <p>
+            <Icon name="tabler:calendar-clock" class="mr-1 inline h-4 w-4" />
+            <time datetime={education.startYear.toString()}>{education.startYear}</time> -
+            {education.current ? (
+              <span>Presente</span>
+            ) : education.endYear ? (
+              <time datetime={education.endYear.toString()}>{education.endYear}</time>
+            ) : null}
+          </p>
+          <div class="mt-4 flex flex-col gap-1">
+            {education.details.map(detail => (
+              <p>{detail}</p>
+            ))}
+          </div>
+        </div>
+        <hr />
+      </li>
+    ))
+  }
+</ul>
