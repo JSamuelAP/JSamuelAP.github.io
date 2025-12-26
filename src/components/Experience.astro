@@ -1,0 +1,41 @@
+---
+import { Icon } from 'astro-icon/components';
+
+import { experiences } from '../config/experience';
+---
+
+<h2 class="mb-4 text-2xl font-bold">Experiencia laboral</h2>
+<ul class="timeline timeline-snap-icon timeline-compact timeline-vertical">
+  {
+    experiences.map(experience => (
+      <li>
+        <hr />
+        <div class="timeline-middle">
+          <Icon name="tabler:briefcase" class="h-5 w-5" />
+        </div>
+        <div class="timeline-end md:mb-10">
+          <div class="text-lg font-semibold">{experience.title}</div>
+          <p>
+            <Icon name="tabler:building" class="mr-1 inline h-4 w-4" />
+            {experience.company}, {experience.location}
+          </p>
+          <p>
+            <Icon name="tabler:calendar-code" class="mr-1 inline h-4 w-4" />
+            <time datetime={experience.startDate}>{experience.startLabel}</time> -
+            {experience.current ? (
+              <span>Presente</span>
+            ) : experience.endDate ? (
+              <time datetime={experience.endDate}>{experience.endLabel}</time>
+            ) : null}
+          </p>
+          <div class="mt-4 flex flex-col gap-2">
+            {experience.activities.map(activity => (
+              <p>{activity}</p>
+            ))}
+          </div>
+        </div>
+        <hr />
+      </li>
+    ))
+  }
+</ul>
