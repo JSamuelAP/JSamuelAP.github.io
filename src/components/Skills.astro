@@ -5,15 +5,23 @@ import Skill from './Skill.astro';
 ---
 
 <h2 class="mb-4 text-2xl font-bold">Habilidades</h2>
-{
-  Object.keys(skills).map(category => (
-    <div class="mb-6">
-      <h3 class="mb-2 text-xl font-semibold">{capitalizeFirstLetter(category)}</h3>
-      <div class="flex flex-wrap gap-x-6 gap-y-2">
-        {skills[category].map(skill => (
-          <Skill skill={skill} />
-        ))}
+<div>
+  {
+    Object.keys(skills).map(category => (
+      <div class="mb-6">
+        <h3 class="mb-2 text-xl font-semibold">{capitalizeFirstLetter(category)}</h3>
+        <div class="flex flex-wrap gap-x-6 gap-y-2">
+          {skills[category].map(skill => (
+            <Skill skill={skill} />
+          ))}
+        </div>
       </div>
-    </div>
-  ))
-}
+    ))
+  }
+</div>
+<p class="mb-2">Actualmente estoy estudiando patrones de diseño para diseñar soluciones robustas.</p>
+<p class="mb-2">
+  Próximamente me gustaría aprender arquitecturas limpias, Docker y GitHub Actions para crear pipelines de CI/CD que me
+  permitan integrar y desplegar mis proyectos de forma automática y asegurar la calidad del software.
+</p>
+<p>Entre otras tecnologías que conozco son RESTful APIs, Microservicios, JsonWebTokens y principios de diseño.</p>
