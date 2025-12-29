@@ -1,0 +1,48 @@
+---
+import { Icon } from 'astro-icon/components';
+import type { Project } from '../config/projects';
+import { Image } from 'astro:assets';
+
+const { project } = Astro.props;
+
+export interface Props {
+  project: Project;
+}
+---
+
+<article class="card md:card-side bg-base-100 shadow-sm">
+  <figure class="w-full shrink-0 md:w-80 lg:w-96">
+    <Image
+      src={project.thumbnail}
+      alt={`Captura de pantalla del proyecto ${project.name}`}
+      class="h-full w-full object-cover"
+    />
+  </figure>
+  <div class="card-body">
+    <h3 class="card-title">{project.name}</h3>
+    <p class="grow-0">
+      {project.description}
+    </p>
+    <div class="flex grow flex-wrap gap-2 pt-3 pb-6">
+      {project.technologies.map(tech => <span class="badge badge-soft badge-primary badge-md">{tech}</span>)}
+    </div>
+    <div class="card-actions justify-end">
+      {
+        project.liveDemoUrl && (
+          <a href={project.liveDemoUrl} class="btn btn-primary" role="button" target="_blank">
+            <Icon name="tabler:eye" class="mr-2 inline-block h-5 w-5" />
+            Demo
+          </a>
+        )
+      }
+      {
+        project.repositoryUrl && (
+          <a href={project.repositoryUrl} class="btn btn-primary btn-outline" role="button" target="_blank">
+            <Icon name="tabler:code" class="mr-2 inline-block h-5 w-5" />
+            Código
+          </a>
+        )
+      }
+    </div>
+  </div>
+</article>

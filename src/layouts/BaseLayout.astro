@@ -1,0 +1,30 @@
+---
+import '@fontsource-variable/onest';
+import '../styles/global.css';
+
+import BottomNavbar from '../components/BottomNavbar.astro';
+import Navbar from '../components/Navbar.astro';
+import Footer from '../components/Footer.astro';
+
+const { pageTitle } = Astro.props;
+---
+
+<html lang="es" data-theme="jsamuel">
+  <head>
+    <meta charset="utf-8" />
+    <link rel="icon" type="image/svg+xml" href="/favicon.svg" />
+    <meta name="viewport" content="width=device-width" />
+    <meta name="generator" content={Astro.generator} />
+    <title>{pageTitle}</title>
+  </head>
+  <body class="mx-auto w-full px-4 pb-20 sm:max-w-xl sm:px-0 sm:pb-0 md:max-w-2xl lg:max-w-4xl">
+    <header>
+      <Navbar />
+      <BottomNavbar />
+    </header>
+    <main class="mt-12">
+      <slot />
+    </main>
+    <Footer />
+  </body>
+</html>

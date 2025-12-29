@@ -1,0 +1,65 @@
+---
+import { Image } from 'astro:assets';
+import { Icon } from 'astro-icon/components';
+
+import photoMobile from '../assets/images/jsamuel-photo-mobile.jpg';
+import photoDesktop from '../assets/images/jsamuel-photo-desktop.jpg';
+---
+
+<div class="hero">
+  <div class="hero-content flex-col items-start gap-8 p-0 lg:flex-row">
+    <div class="lg:flex-1">
+      <h1 class="mb-6 text-3xl font-bold lg:text-4xl">
+        <span class="from-secondary to-primary inline-block bg-linear-to-r bg-clip-text text-transparent">JSamuel</span
+        >, ingeniero de software enfocado en la calidad del código y el diseño de sistemas
+      </h1>
+      <p class="mb-2">
+        Hola, soy <span class="font-bold">José Samuel</span>, ingeniero en sistemas computacionales con año y medio de
+        experiencia en desarrollo web, con enfoque en backend.
+      </p>
+      <p class="mb-2">
+        Caracterizado en la creación de soluciones mantenibles mediante buenas prácticas de código y principios de
+        diseño.
+      </p>
+      <p class="mb-4">
+        Interesado en testing, arquitecturas limpias y automatización CI/CD, con el objetivo de crecer hacia un rol de
+        arquitecto de software.
+      </p>
+      <p class="text-base-content/80 mb-2">
+        <Icon name="tabler:map-pin" class="inline-block" /> León Guanajuato, México
+      </p>
+      <div class="flex flex-wrap gap-2">
+        <a
+          href="/CV-Jose-Samuel-Aldana-Perez.pdf"
+          role="button"
+          class="btn btn-primary"
+          target="_blank"
+          rel="noopener noreferrer"
+        >
+          <Icon name="tabler:file-cv" class="text-lg" /> Curriculum
+        </a>
+        <a href="mailto:sp4619168@gmail.com" role="button" class="btn btn-outline">
+          <Icon name="tabler:mail" class="text-lg" /> Email
+        </a>
+        <a href="https://www.linkedin.com/in/jsamuelap" role="button" class="btn btn-outline" target="_blank">
+          <Icon name="tabler:brand-linkedin" class="text-lg" /> LinkedIn
+        </a>
+        <a href="https://github.com/JSamuelAP" role="button" class="btn btn-outline" target="_blank">
+          <Icon name="tabler:brand-github" class="text-lg" /> GitHub
+        </a>
+      </div>
+    </div>
+    <div class="w-full lg:w-72 lg:flex-none">
+      <picture>
+        <source media="(max-width: 1024px)" srcset={photoMobile.src} />
+        <Image
+          src={photoDesktop}
+          alt="Foto de José Samuel"
+          class="h-auto w-full rounded-lg object-cover shadow-xl"
+          loading="eager"
+          decoding="async"
+        />
+      </picture>
+    </div>
+  </div>
+</div>

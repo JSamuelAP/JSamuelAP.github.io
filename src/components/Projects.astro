@@ -1,0 +1,9 @@
+---
+import CardProject from './CardProject.astro';
+
+import { projects } from '../config/projects';
+---
+
+<div class="flex flex-col gap-4">
+  {projects.map(project => <CardProject project={project} />)}
+</div>
