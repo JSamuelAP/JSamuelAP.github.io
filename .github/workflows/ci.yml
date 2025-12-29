@@ -17,6 +17,6 @@ jobs:
       - name: Run ESLint
         run: npm run lint
       - name: Astro check
-        run: npm run astro:check
+        run: npm run check
       - name: Build site
         run: npm run build
