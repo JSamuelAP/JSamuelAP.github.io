@@ -4,7 +4,6 @@ import { Icon } from 'astro-icon/components';
 import { educationHistory } from '../config/education';
 ---
 
-<h2 class="mb-4 text-2xl font-bold">Educación</h2>
 <ul class="timeline timeline-snap-icon timeline-compact timeline-vertical">
   {
     educationHistory.map(education => (
@@ -15,11 +14,11 @@ import { educationHistory } from '../config/education';
         </div>
         <div class="timeline-end md:mb-10">
           <div class="text-lg font-semibold">{education.title}</div>
-          <p>
+          <p class="text-base-content/75">
             <Icon name="tabler:building" class="mr-1 inline h-4 w-4" />
             {education.institution}
           </p>
-          <p>
+          <p class="text-base-content/75">
             <Icon name="tabler:calendar-clock" class="mr-1 inline h-4 w-4" />
             <time datetime={education.startYear.toString()}>{education.startYear}</time> -
             {education.current ? (

@@ -4,12 +4,11 @@ import { skills } from '../config/skills';
 import Skill from './Skill.astro';
 ---
 
-<h2 class="mb-4 text-2xl font-bold">Habilidades</h2>
 <div>
   {
     Object.keys(skills).map(category => (
       <div class="mb-6">
-        <h3 class="mb-2 text-xl font-semibold">{capitalizeFirstLetter(category)}</h3>
+        <h3 class="mb-2 text-2xl font-semibold">{capitalizeFirstLetter(category)}</h3>
         <div class="flex flex-wrap gap-x-6 gap-y-2">
           {skills[category].map(skill => (
             <Skill skill={skill} />

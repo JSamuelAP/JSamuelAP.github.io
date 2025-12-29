@@ -4,7 +4,6 @@ import { Icon } from 'astro-icon/components';
 import { experiences } from '../config/experience';
 ---
 
-<h2 class="mb-4 text-2xl font-bold">Experiencia laboral</h2>
 <ul class="timeline timeline-snap-icon timeline-compact timeline-vertical">
   {
     experiences.map(experience => (
@@ -14,12 +13,12 @@ import { experiences } from '../config/experience';
           <Icon name="tabler:briefcase" class="h-5 w-5" />
         </div>
         <div class="timeline-end md:mb-10">
-          <div class="text-lg font-semibold">{experience.title}</div>
-          <p>
+          <h3 class="text-xl font-semibold">{experience.title}</h3>
+          <p class="text-base-content/75">
             <Icon name="tabler:building" class="mr-1 inline h-4 w-4" />
             {experience.company}, {experience.location}
           </p>
-          <p>
+          <p class="text-base-content/75">
             <Icon name="tabler:calendar-code" class="mr-1 inline h-4 w-4" />
             <time datetime={experience.startDate}>{experience.startLabel}</time> -
             {experience.current ? (

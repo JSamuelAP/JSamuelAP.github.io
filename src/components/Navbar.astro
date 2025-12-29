@@ -1,10 +1,15 @@
 ---
 import { navigationItems } from '../config/navigation';
+import jsamuelLogo from '../assets/jsamuel-logo.svg';
+import { Image } from 'astro:assets';
 ---
 
 <nav class="navbar bg-base-100 hidden sm:flex">
   <div class="flex-1">
-    <a href="/" class="cursor-pointer text-xl">JSamuel</a>
+    <a href="/" class="text-primary cursor-pointer text-xl font-medium">
+      <Image src={jsamuelLogo} alt="JSamuel Logo" class="mr-0 inline-block h-8 w-8" loading="eager" />
+      JSamuel</a
+    >
   </div>
   <div class="flex-none">
     <ul class="menu menu-horizontal px-1">

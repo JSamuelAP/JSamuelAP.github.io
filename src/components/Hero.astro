@@ -2,16 +2,15 @@
 import { Image } from 'astro:assets';
 import { Icon } from 'astro-icon/components';
 
-import photoMobile from '../assets/images/jsamuel-photo-mobile.png';
-import photoDesktop from '../assets/images/jsamuel-photo-desktop.png';
+import photoMobile from '../assets/images/jsamuel-photo-mobile.jpg';
+import photoDesktop from '../assets/images/jsamuel-photo-desktop.jpg';
 ---
 
 <div class="hero">
   <div class="hero-content flex-col items-start gap-8 p-0 lg:flex-row">
     <div class="lg:flex-1">
       <h1 class="mb-6 text-3xl font-bold lg:text-4xl">
-        <span class="inline-block bg-linear-to-r from-emerald-500 to-emerald-900 bg-clip-text text-transparent"
-          >JSamuel</span
+        <span class="from-secondary to-primary inline-block bg-linear-to-r bg-clip-text text-transparent">JSamuel</span
         >, ingeniero de software enfocado en la calidad del código y el diseño de sistemas
       </h1>
       <p class="mb-2">
@@ -26,7 +25,9 @@ import photoDesktop from '../assets/images/jsamuel-photo-desktop.png';
         Interesado en testing, arquitecturas limpias y automatización CI/CD, con el objetivo de crecer hacia un rol de
         arquitecto de software.
       </p>
-      <p class="mb-2"><Icon name="tabler:map-pin" class="inline-block" /> León Guanajuato, México</p>
+      <p class="text-base-content/80 mb-2">
+        <Icon name="tabler:map-pin" class="inline-block" /> León Guanajuato, México
+      </p>
       <div class="flex flex-wrap gap-2">
         <a
           href="/CV-Jose-Samuel-Aldana-Perez.pdf"

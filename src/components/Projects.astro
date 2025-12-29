@@ -4,7 +4,6 @@ import CardProject from './CardProject.astro';
 import { projects } from '../config/projects';
 ---
 
-<h2 class="mb-4 text-2xl font-bold">Proyectos destacados</h2>
 <div class="flex flex-col gap-4">
   {projects.map(project => <CardProject project={project} />)}
 </div>

@@ -1,5 +1,5 @@
-import thumbnailPlaceholder from '../assets/images/projects/thumbnail-placeholder.png';
-import capysoftThumbnail from '../assets/images/projects/capysoft-thumbnail.jpeg';
+import capySoftThumbnail from '../assets/images/projects/capysoft-thumbnail.jpeg';
+import portafolioThumbnail from '../assets/images/projects/portafolio-thumbnail.jpeg';
 import innovaTubeThumbnail from '../assets/images/projects/innovatube-thumbnail.jpeg';
 
 export type Project = {
@@ -18,7 +18,7 @@ export const projects: Project[] = [
     name: 'Mi portafolio web',
     description:
       'Sitio web estático donde muestro mis habilidades y proyectos para darme a conocer como desarrollador de software.',
-    thumbnail: thumbnailPlaceholder,
+    thumbnail: portafolioThumbnail,
     technologies: ['Astro', 'Tailwind CSS', 'DaisyUI'],
     repositoryUrl: 'https://github.com/JSamuelAP/JSamuelAP.github.io',
     liveDemoUrl: 'https://jsamuelap.github.io',
@@ -38,7 +38,7 @@ export const projects: Project[] = [
     name: 'CapySoft',
     description:
       'Punto de venta para la cafeteria El rincón del Capibara. Proyecto escolar que incluye microservicios.',
-    thumbnail: capysoftThumbnail,
+    thumbnail: capySoftThumbnail,
     technologies: ['Angular', 'PrimeNG', 'Java', 'Spring Boot', 'MySQL', 'Docker'],
     repositoryUrl: 'https://github.com/JSamuelAP/capysoft',
   },
