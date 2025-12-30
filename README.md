@@ -31,6 +31,7 @@ Sitio web estático para mostrar mis habilidades y darme a conocer como desarrol
 
 ![Prettier](https://img.shields.io/badge/Prettier-F7B93E?logo=prettier&logoColor=gray)
 ![ESLint](https://img.shields.io/badge/ESLint-4B32C3?logo=eslint&logoColor=white)
+![Vitest](https://img.shields.io/badge/Vitest-6E9F18?logo=vitest&logoColor=white)
 ![Commitlint](https://img.shields.io/badge/Commitlint-black?logo=commitlint&logoColor=white)
 ![Lint-staged](https://img.shields.io/badge/lint--staged-red)
 ![Husky](https://img.shields.io/badge/Husky-gray)
@@ -80,6 +81,7 @@ jsamuelap.github.io/
 │   │   └── global.css                  # Estilos globales y configuración de Tailwind y DaisyUI
 │   └── utils/
 │       └── utils.astro                 # Funciones de utilidad
+├── tests/                              # Pruebas unitarias
 ├── .lintstagedrc                       # Configuración de lint-staged
 ├── .prettierignore                     # Archivos y carpetas ignorados por Prettier
 ├── .prettierrc                         # Configuración de Prettier
@@ -135,6 +137,18 @@ Formatear con Prettier
 
 ```bash
 npm run format
+```
+
+Ejecutar todos los tests
+
+```bash
+npm test
+```
+
+Ejecutar tests en modo desarrollo
+
+```bash
+npm run test:watch
 ```
 
 Ejecutar ESLint y Prettier sobre los archivos en el stage
