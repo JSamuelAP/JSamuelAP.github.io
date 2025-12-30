@@ -7,9 +7,9 @@ import icon from 'astro-icon';
 
 // https://astro.build/config
 export default defineConfig({
+  site: 'https://jsamuelap.github.io',
   vite: {
     plugins: [tailwindcss()],
   },
-
   integrations: [icon()],
 });
