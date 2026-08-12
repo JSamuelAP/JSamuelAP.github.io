@@ -12,6 +12,20 @@ export type Experience = {
 
 export const experiences: Experience[] = [
   {
+    title: 'Desarrollador Java',
+    company: 'Sistemas Premium',
+    location: 'León Guanajuato, México',
+    current: false,
+    startLabel: 'Enero 2026',
+    endLabel: 'Julio 2026',
+    startDate: '2026-01',
+    endDate: '2026-07',
+    activities: [
+      'Participación en un proyecto de facturación electrónica para el Banco del Bajío como consultor de desarrollo. Desarrollo y migración de microservicios con Spring Boot y arquitectura hexagonal, implementación de procesamiento orientado a eventos con Kafka y Web Sockets, diseño y optimización de bases de datos SQL Server y JPA, desarrollo del frontend con Angular y PrimeNG, integración con PAC para timbrado de CFDI y aplicación de mecanismos de ciberseguridad mediante JWT, certificados digitales y cifrado de información.',
+      'Esta solución ha permitido que el sellado y timbrado de miles de constancias se reduzca de horas e incluso días a pocos minutos. También se está logrando mejorar la transparencia y trazabilidad de la información procesada para los usuarios.',
+    ],
+  },
+  {
     title: 'Analista desarrollador',
     company: 'Grupo Castores',
     location: 'León Guanajuato, México',
